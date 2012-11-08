@@ -1,0 +1,61 @@
+
+<template name="header">
+<div class="row-fluid">
+  <div class="span12">
+    {{ loginButtons }}
+  </div>
+</div>
+</template>
+
+<template name="main">
+<div class="row-fluid">
+  <div class="span2 well left">
+    {{> left }}
+  </div>
+  <div class="span6 well center">
+    {{> middle }}
+  </div>
+  <div class="span4 well right">
+    {{> right }}
+  </div>
+</div>
+</template>
+
+<template name="footer">
+<div class="row-fluid footer">
+  <div class="span12 well">
+    ...
+  </div>
+</div>
+</template>
+
+<template name="googleAnalytics">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{ code }}']);
+  _gaq.push(['_trackPageview']);
+  console.log( _gaq);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  try {
+    // Log all jQuery AJAX requests to Google Analytics
+    $(document).ajaxSend(function(event, xhr, settings) {
+      if (typeof _gaq !== "undefined" && _gaq !== null) {
+        _gaq.push(['_trackPageview', settings.url]);
+      }
+    });
+  } catch(e) {
+
+  }
+  window.onerror = function(message, file, line) {
+    var sFormattedMessage = '[' + file + ' (' + line + ')] ' + message; 
+    _gaq.push(['_trackEvent', 'Exceptions', 'Application', sFormattedMessage, null, true]);
+  }
+</script>
+</template>
+
