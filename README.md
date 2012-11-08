@@ -9,28 +9,10 @@ Assuming meteor is installed just run
     meteor 
     # goto http://localhost:3000
 
-    http://whizmo.herokuapp.com/
 
+Installation and initial notes below, probably ignore
+-----------------------------------------------------
 
-# Requires mongohq, make sure account is verified by adding CC 
-
-    # heroku addons:add mongohq:free
-    # heroku addons:add mailgun:starter
-
-    heroku create whizmo --stack cedar --buildpack https://github.com/pkar/heroku-buildpack-meteor.git
-    #heroku config:set ROOT_URL=http://whizmo.herokuapp.com
-    #heroku config:set FILEPICKERIO=ApH1oY5HHQy_____
-    #heroku config:set GOOGLE_ANALYTICS=key
-    # Locally FILEPICKERIO env must be set 
-    export FILEPICKERIO=apikey
-    export GOOGLE_ANALYTICS=apikey
-
-    # To deploy just commit and push
-    # git commit -m "commit details"
-    # git push heroku master
-
-
-# Caveats
 1.  Since a canonical layout is unknown, try using this layout structure
 
     ## https://github.com/tmeasday/unofficial-meteor-faq#where-should-i-put-my-files
