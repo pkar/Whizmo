@@ -1,5 +1,29 @@
 root = global ? window
 
+root.Template.center.error = ->
+  Session.get('error')
+
+root.Template.center.userName = ->
+  user = Meteor.user()
+  user?.profile?.name or user?.emails[0]?.address
+
+root.Template.main.greeting = ->
+  #console.log Session.get('user')
+  "Hello #{}"
+
+root.Template.main.events =
+  "click .filepickerio": (event) ->
+    filepicker.pick(
+      {mimetypes:['*']},
+      #{mimetypes:['image/*']},
+      (FPFile) ->
+        console.log FPFile
+      ,
+      (FPError) ->
+        console.log FPError
+      ,
+    )
+
 class root.Whizmo.AppRouter extends Backbone.Router
   routes:
     "": "index"
@@ -34,9 +58,4 @@ Meteor.startup () ->
   Meteor.call 'filepickerio', (err, key) ->
     if not err
       filepicker.setKey(key)
-
-  Meteor.call 'googleAnalytics', (err, key) ->
-    if err
-      console.log err
-    Session.set '_googleAnalytics', key
 
