@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Whizmo">
   <meta name="author" content="Whizmo">
+  
+    <style type="text/css">
+        .brag-table td {
+            border-top-width: 0px;
+        }
+    
+        .brag-table {
+            margin-bottom: 0px;
+        }
+        
+        .container {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,49 +29,101 @@
 </body>
 
 <template name="header">
-<div class="row-fluid">
-  <div class="span12">
-    {{ loginButtons }}
-  </div>
-</div>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="#">Whizmo</a>
+            <ul class="nav">
+                <li class="active"><a href="#summary-tab" data-toggle="tab">Summary</a></li>
+                <li><a href="#investment-tab" data-toggle="tab">Investment Guide</a></li>
+                <li><a href="#portfolio-tab" data-toggle="tab">Manage Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+
 </template>
 
 <template name="main">
-<div class="row-fluid">
-  <div class="span2 well left">
-    <a href="/">Home</a><br/>
-    <a href="#buildings">Portfolio</a>
-    <ul>
-      <li><a href="#add">Add Building</a></li>
-      <li><a href="#edit">Edit Building</a></li>
-      <li><a href="#buildings">Buildings</a></li>
-      <li><a href="#meters">Meters</a></li>
-    <ul>
-  </div>
-  <div class="span10 well center">
-    {{#if error}}
-      <div class="alert alert-error">
-        <button type="button" class="close" data-dismiss="alert">×</button> 
-        {{error}}
-      </div>
-    {{/if}}
-    {{#if content.type.index }}
-      index
-    {{/if}}
-    {{#if content.type.add }}
-      Add info
-        <input />
-    {{/if}}
-    {{#if content.type.edit }}
-      Edit info
-        <input />
-    {{/if}}
-    {{#if content.type.buildings}}
-      buildings
-    {{/if}}
-    {{#if content.type.meters}}
-      meters
-    {{/if}}
-  </div>
-</div>
+
+        <div class="container">
+
+            <div class="well">
+                <table class="table brag-table">
+                    <tr>
+                        <td>My buildings have improved 85% over the past 3 weeks</td>
+                        <td>
+                           <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
+                             <img src="img/icn-twitter.png" />
+                           </a>
+                           <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
+                            <img src="img/icn-facebook.png" />
+                           </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>My buildings have improved 85% over the past 3 weeks</td>
+                        <td>
+                           <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
+                             <img src="img/icn-twitter.png" />
+                           </a>
+                           <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
+                            <img src="img/icn-facebook.png" />
+                           </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="tab-content">
+                <div class="tab-pane active" id="summary-tab">
+                    CHARTS GO HERE
+                </div>
+                <div class="tab-pane" id="investment-tab">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="75%">Location</th>
+                                <th>Type</th>
+                                <th>Investment Opportunity</th>
+                                <th>Incentives</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 Carrot Way, Yourtown, USA</td>
+                                <td>Office</td>
+                                <td>$5000</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>1 Carrot Way, Yourtown, USA</td>
+                                <td>Office</td>
+                                <td>$5000</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>1 Carrot Way, Yourtown, USA</td>
+                                <td>Office</td>
+                                <td>$5000</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>1 Carrot Way, Yourtown, USA</td>
+                                <td>Office</td>
+                                <td>$5000</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="portfolio-tab">
+                    <div class="header">
+                        <div class="btn btn-success pull-right"><i class="icon-white icon-plus"></i> Add a Building</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
 </template>
