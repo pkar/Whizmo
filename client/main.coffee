@@ -13,6 +13,29 @@ root.Template.main.userName = ->
 root.Template.main.data = ->
   [3, 9, 5, 16, 23, 42]
 
+root.Template.main.brag = ->
+  [
+    "My buildings have improved 85% over the past 3 weeks.",
+    "My office building at 1 Carrot Way, Anytown USA is performing 23% better than industry average.",
+    "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
+  ]
+
+root.Template.main.building = ->
+  [
+    {
+        "location":"1 Carrot Way, Yourtown, USA",
+        "usage":"Office",
+        "opportunity":"$5000",
+        "incentives":6
+    },
+    {
+        "location":"500 Main Street, Fancypants, CA",
+        "usage":"Office",
+        "opportunity":"$7500",
+        "incentives":1
+    }
+  ]
+
 root.Template.main.content = ->
   Session.get('content')
 

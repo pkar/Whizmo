@@ -27,6 +27,7 @@
             margin-right: 8px;
         }
     </style>
+    
 </head>
 
 <body>
@@ -57,39 +58,21 @@
 
             <div class="well">
                 <table class="table brag-table">
-                    <tr>
-                        <td>My buildings have improved 85% over the past 3 weeks.</td>
-                        <td>
-                           <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
-                             <img src="img/icn-twitter.png" />
-                           </a>
-                           <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
-                            <img src="img/icn-facebook.png" />
-                           </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>My office building at 1 Carrot Way, Anytown USA is performing 23% better than industry average.</td>
-                        <td>
-                           <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
-                             <img src="img/icn-twitter.png" />
-                           </a>
-                           <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
-                            <img src="img/icn-facebook.png" />
-                           </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Recent investments have improved 3 of my buildings by over $0.53 per square foot.</td>
-                        <td>
-                           <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
-                             <img src="img/icn-twitter.png" />
-                           </a>
-                           <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
-                            <img src="img/icn-facebook.png" />
-                           </a>
-                        </td>
-                    </tr>
+                    <tbody>
+                        {{#each brag}}
+                        <tr>
+                            <td>{{.}}</td>
+                            <td>
+                               <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
+                                 <img src="img/icn-twitter.png" />
+                               </a>
+                               <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
+                                <img src="img/icn-facebook.png" />
+                               </a>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
                 </table>
             </div>
         
@@ -108,30 +91,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                            
+                            {{#each building}}
                             <tr onclick="$('#investment-info-modal').modal('show');">
-                                <td>1 Carrot Way, Yourtown, USA</td>
-                                <td>Office</td>
-                                <td>$5000</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>1 Carrot Way, Yourtown, USA</td>
-                                <td>Office</td>
-                                <td>$5000</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>1 Carrot Way, Yourtown, USA</td>
-                                <td>Office</td>
-                                <td>$5000</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>1 Carrot Way, Yourtown, USA</td>
-                                <td>Office</td>
-                                <td>$5000</td>
-                                <td>6</td>
-                            </tr>
+                                <td>{{location}}</td>
+                                <td>{{usage}}</td>
+                                <td>{{opportunity}}</td>
+                                <td>{{incentives}}</td>
+                            </tr>                            
+                            {{/each}}
+                            
                         </tbody>
                     </table>
                 </div>
@@ -150,10 +119,12 @@
                             </tr>
                         </thead>
                         <tbody>
+                            {{#each building}}
                             <tr>
-                                <td>1 Carrot Way, Anytown USA</td>
+                                <td>{{location}}</td>
                                 <td><div class="pull-right btn btn-danger"><i class="icon-minus icon-white"></i> Delete Building</div></td>
                             </tr>
+                            {{/each}}
                         </tbody>
                     </table>
                 </div>
