@@ -20,11 +20,14 @@ root.Template.main.events =
   "click .blah": (event) ->
     console.log event
 
+
 class root.Whizmo.AppRouter extends Backbone.Router
   routes:
     "": "index"
     "buildings": "buildings"
     "meters": "meters"
+    "add": "add"
+    "edit": "edit"
     "help": "help"
     "search/:query": "search"
     "*path": "error404"
@@ -33,17 +36,23 @@ class root.Whizmo.AppRouter extends Backbone.Router
     @app =
       broker: @broker
 
+  edit: ->
+    Session.set('content', {type: {edit: true}})
+
+  add: ->
+    Session.set('content', {type: {add: true}})
+
   buildings: ->
-    Session.set('content', 'buildings')
+    Session.set('content', {type: {buildings: true}})
 
   meters: ->
-    Session.set('content', 'meters')
+    Session.set('content', {type: {meters: true}})
 
   index: ->
-    Session.set('content', 'index')
+    Session.set('content', {type: {index: true}})
 
   help: ->
-    Session.set('content', 'help')
+    Session.set('content', {type: {help: true}})
 
   error404: () ->
     document.title = "Error"

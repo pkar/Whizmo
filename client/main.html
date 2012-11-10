@@ -25,8 +25,11 @@
 <template name="main">
 <div class="row-fluid">
   <div class="span2 well left">
+    <a href="/">Home</a><br/>
     <a href="#buildings">Portfolio</a>
     <ul>
+      <li><a href="#add">Add Building</a></li>
+      <li><a href="#edit">Edit Building</a></li>
       <li><a href="#buildings">Buildings</a></li>
       <li><a href="#meters">Meters</a></li>
     <ul>
@@ -38,8 +41,22 @@
         {{error}}
       </div>
     {{/if}}
-    {{#if content }}
-      {{content}}
+    {{#if content.type.index }}
+      index
+    {{/if}}
+    {{#if content.type.add }}
+      Add info
+        <input />
+    {{/if}}
+    {{#if content.type.edit }}
+      Edit info
+        <input />
+    {{/if}}
+    {{#if content.type.buildings}}
+      buildings
+    {{/if}}
+    {{#if content.type.meters}}
+      meters
     {{/if}}
   </div>
 </div>
