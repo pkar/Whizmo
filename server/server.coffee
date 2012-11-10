@@ -1,3 +1,10 @@
+root = global ? window
+
+Whizmo = Whizmo || {}
+root.Whizmo = Whizmo || {}
+
+Messages = new Meteor.Collection('messages')
+Rooms = new Meteor.Collection('rooms')
 
 Meteor.publish "directory", () ->
   Meteor.users.find({}, {fields: {emails: 1, profile: 1}})
