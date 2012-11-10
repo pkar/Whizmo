@@ -13,6 +13,8 @@ Meteor.publish "meters", (id) ->
   #Messages.find({_id: id}, {sort: { time: -1 }})
   Messages.find({_id: id})
 
+Meteor.publish "data", () ->
+  [3, 9, 5, 16, 23, 42]
 
 Meteor.startup () ->
 
