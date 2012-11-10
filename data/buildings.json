@@ -1,0 +1,47 @@
+[
+  {
+    "City": "Oak Creek",
+    "TimezoneCode": "Central Standard Time",
+    "BuildingName": "Corporate Building",
+    "Area": 0,
+    "AreaUnitofMeasureCode": null,
+    "Address1": "900 E. Michigan Ave",
+    "Address2": null,
+    "StateCode": "WI",
+    "Longitude": -87.899382,
+    "Latitude": 42.909716,
+    "BuildingDescription": "",
+    "BuildingUrl": "adv://Space/GreenCompany/Corporate Building/",
+    "PostCode": "53154"
+  },
+  {
+    "City": "Oak Creek",
+    "TimezoneCode": "Central Standard Time",
+    "BuildingName": "Engineering Building",
+    "Area": 0,
+    "AreaUnitofMeasureCode": null,
+    "Address1": "200 Milwaukee Ave",
+    "Address2": null,
+    "StateCode": "WI",
+    "Longitude": -87.899382,
+    "Latitude": 42.910716,
+    "BuildingDescription": "",
+    "BuildingUrl": "adv://Space/GreenCompany/Engineering Building/",
+    "PostCode": "53154"
+  },
+  {
+    "City": "Oak Creek",
+    "TimezoneCode": "Central Standard Time",
+    "BuildingName": "Technology Center",
+    "Area": 0,
+    "AreaUnitofMeasureCode": null,
+    "Address1": "7400 S. Shepard Ave",
+    "Address2": null,
+    "StateCode": "WI",
+    "Longitude": -87.901082,
+    "Latitude": 42.909716,
+    "BuildingDescription": "Technology Center Building",
+    "BuildingUrl": "adv://Space/Green Company/Technology Center/",
+    "PostCode": "53154"
+  }
+]
