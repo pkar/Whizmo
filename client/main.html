@@ -22,6 +22,10 @@
         #investment-tab table td {
             cursor: pointer;
         }
+        
+        #add-a-building {
+            margin-right: 8px;
+        }
     </style>
 </head>
 
@@ -97,7 +101,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th width="75%">Location</th>
+                                <th width="50%">Location</th>
                                 <th>Type</th>
                                 <th>Investment Opportunity</th>
                                 <th>Incentives</th>
@@ -133,10 +137,25 @@
                 </div>
                 <div class="tab-pane" id="portfolio-tab">
                     <div class="header">
-                        <div class="btn btn-success pull-right" onclick="$('#add-building-modal').modal('show');">
+                        <div id="add-a-building" class="btn btn-success pull-right" onclick="$('#add-building-modal').modal('show');">
                             <i class="icon-white icon-plus"></i> Add a Building
                         </div>
                     </div>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Address</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 Carrot Way, Anytown USA</td>
+                                <td><div class="pull-right btn btn-danger"><i class="icon-minus icon-white"></i> Delete Building</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             
