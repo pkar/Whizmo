@@ -1,0 +1,107 @@
+[
+  {
+    "LocatedInSpaceUrl": "adv://Space/GreenCompany/Engineering Building/",
+    "MeterDescription": "NULL",
+    "MeterUrn": "ElectricMeter",
+    "MeterUrl": "adv://equip/Config/8/507/Building 1 Whole Building Electric Utility Meter/",
+    "Points": [
+      {
+        "PointDescription": "/GreenBuild/MV/ElectricMeter/KW",
+        "UnitOfMeasure": "KILOWATTS",
+        "PointUrl": "adv://811137E4-0AAB-4EC6-BBC6-2CB1B261CBFB/",
+        "PointUrn": "IntervalDemand"
+      }
+    ],
+    "MeterName": "Engineering Building Electric Meter"
+  },
+  {
+    "LocatedInSpaceUrl": "adv://Space/GreenCompany/Engineering Building/Floor 1/",
+    "MeterDescription": "NULL",
+    "MeterUrn": "ElectricMeter",
+    "MeterUrl": "adv://equip/Config/8/507/Meter B6 F0 HVAC 3 Demand/",
+    "Points": [
+      {
+        "PointDescription": "B6 F0 HVAC 3 Demand",
+        "UnitOfMeasure": "KILOWATTS",
+        "PointUrl": "adv://96f43554-6ad2-454b-a50c-600b186f4692/",
+        "PointUrn": "IntervalDemand"
+      }
+    ],
+    "MeterName": "Sub-Meter-5"
+  },
+  {
+    "LocatedInSpaceUrl": "adv://Space/GreenCompany/Engineering Building/Floor 2/",
+    "MeterDescription": "NULL",
+    "MeterUrn": "ElectricMeter",
+    "MeterUrl": "adv://equip/Config/8/507/Meter B6 F1 Ltg 1 Demand/",
+    "Points": [
+      {
+        "PointDescription": "B6 F1 Ltg 1 Demand",
+        "UnitOfMeasure": "KILOWATTS",
+        "PointUrl": "adv://7d4d6943-6c3a-41b0-a776-779a949ce615/",
+        "PointUrn": "IntervalDemand"
+      }
+    ],
+    "MeterName": "Sub-Meter-6"
+  },
+  {
+    "LocatedInSpaceUrl": "adv://Space/GreenCompany/Engineering Building/Floor 3/",
+    "MeterDescription": "NULL",
+    "MeterUrn": "ElectricMeter",
+    "MeterUrl": "adv://equip/Config/8/507/Meter B6 F2 Rcpt 3 Demand/",
+    "Points": [
+      {
+        "PointDescription": "B6 F2 Rcpt 3 Demand",
+        "UnitOfMeasure": "KILOWATTS",
+        "PointUrl": "adv://31b9ab75-9b68-42ec-a3a0-eed5702a59e5/",
+        "PointUrn": "IntervalDemand"
+      }
+    ],
+    "MeterName": "Sub-Meter-7"
+  },
+  {
+    "LocatedInSpaceUrl": "adv://Space/GreenCompany/Corporate Building/Floor 1/",
+    "MeterDescription": "NULL",
+    "MeterUrn": "ElectricMeter",
+    "MeterUrl": "adv://equip/Config/8/507/Corporate Building Electric Utility Meter/",
+    "Points": [
+      {
+        "PointDescription": "/GreenBuild/Corp/ElectricMeter/KW",
+        "UnitOfMeasure": "KILOWATTS",
+        "PointUrl": "adv://A890C872-0EF1-4B51-8875-C07E450C0720/",
+        "PointUrn": "IntervalDemand"
+      }
+    ],
+    "MeterName": "Corporate Building Electric Meter"
+  },
+  {
+    "LocatedInSpaceUrl": "adv://Space/Green Company/Technology Center/",
+    "MeterDescription": "NULL",
+    "MeterUrn": "ElectricMeter",
+    "MeterUrl": "adv://equip/Config/8/507/Technology Center Whole Building Consumption Electric Utility Meter/",
+    "Points": [
+      {
+        "PointDescription": "/Green Company/MV/ElectricMeter/Technology Center kWh",
+        "UnitOfMeasure": "KWATT_HOURS",
+        "PointUrl": "adv://BF1DB016-5DD4-4152-9E30-923926A88A2A/",
+        "PointUrn": "InstantaneousConsumption"
+      }
+    ],
+    "MeterName": "Technology Center Consumption Electric Meter"
+  },
+  {
+    "LocatedInSpaceUrl": "adv://Space/Green Company/Technology Center/",
+    "MeterDescription": "NULL",
+    "MeterUrn": "ElectricMeter",
+    "MeterUrl": "adv://equip/Config/8/507/Technology Center Whole Building Demand Electric Utility Meter/",
+    "Points": [
+      {
+        "PointDescription": "/Green Company/MV/ElectricMeter/Technology Center kW",
+        "UnitOfMeasure": "KILOWATTS",
+        "PointUrl": "adv://8235191A-FEE7-4A21-A866-64B70BCED490/",
+        "PointUrn": "IntervalDemand"
+      }
+    ],
+    "MeterName": "Technology Center Demand Electric Meter"
+  }
+]
