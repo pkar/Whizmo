@@ -3,32 +3,22 @@ root = global ? window
 Whizmo = Whizmo || {}
 root.Whizmo = Whizmo || {}
 
-root.Template.center.error = ->
+root.Template.main.error = ->
   Session.get('error')
 
-root.Template.center.userName = ->
+root.Template.main.userName = ->
   user = Meteor.user()
   user?.profile?.name or user?.emails[0]?.address
 
-root.Template.center.data = ->
+root.Template.main.data = ->
   [3, 9, 5, 16, 23, 42]
 
-root.Template.main.greeting = ->
-  #console.log Session.get('user')
-  "Hello #{}"
+root.Template.main.content = ->
+  Session.get('content')
 
 root.Template.main.events =
-  "click .filepickerio": (event) ->
-    filepicker.pick(
-      {mimetypes:['*']},
-      #{mimetypes:['image/*']},
-      (FPFile) ->
-        console.log FPFile
-      ,
-      (FPError) ->
-        console.log FPError
-      ,
-    )
+  "click .blah": (event) ->
+    console.log event
 
 class root.Whizmo.AppRouter extends Backbone.Router
   routes:
@@ -55,9 +45,6 @@ class root.Whizmo.AppRouter extends Backbone.Router
   help: ->
     Session.set('content', 'help')
 
-  search: (query) ->
-    Session.set('content', 'search')
-
   error404: () ->
     document.title = "Error"
     Session.set('content', 'error')
@@ -66,10 +53,6 @@ class root.Whizmo.AppRouter extends Backbone.Router
 Meteor.startup () ->
   broker = _.extend({}, Backbone.Events)
   appRouter = new root.Whizmo.AppRouter(broker)
-  if not Backbone.history.start({pushState: true})
+  if not Backbone.history.start({pushState: false})
     appRouter.app.middle.$el.html = new root.Whizmo.Views.Error().render().$el
-
-  Meteor.call 'filepickerio', (err, key) ->
-    if not err
-      filepicker.setKey(key)
 

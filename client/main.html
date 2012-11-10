@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Whizmo">
   <meta name="author" content="Whizmo">
-  <script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
 </head>
 
 <body>
   <div class="container-fluid">
     {{> header }}
     {{> main }}
-    {{> footer }}
   </div>
 </body>
 
@@ -27,44 +25,22 @@
 <template name="main">
 <div class="row-fluid">
   <div class="span2 well left">
-    {{> left }}
+    <a href="#buildings">Portfolio</a>
+    <ul>
+      <li><a href="#buildings">Buildings</a></li>
+      <li><a href="#meters">Meters</a></li>
+    <ul>
   </div>
   <div class="span10 well center">
-    {{> center }}
+    {{#if error}}
+      <div class="alert alert-error">
+        <button type="button" class="close" data-dismiss="alert">×</button> 
+        {{error}}
+      </div>
+    {{/if}}
+    {{#if content }}
+      {{content}}
+    {{/if}}
   </div>
 </div>
 </template>
-
-<template name="footer">
-<div class="row-fluid footer">
-  <div class="span12 well">
-  </div>
-</div>
-</template>
-
-
-<template name="left">
-  <a href="#buildings">Portfolio</a>
-  <ul>
-    <li><a href="#buildings">Buildings</a></li>
-    <li><a href="#meters">Meters</a></li>
-  <ul>
-</template>
-
-<template name="right">
-</template>
-
-<template name="center">
-  {{#if error}}
-    <div class="alert alert-error">
-      <button type="button" class="close" data-dismiss="alert">×</button> 
-      {{error}}
-    </div>
-  {{/if}}
-  {{#if currentUserLoaded}}
-    Hello {{ userName }}
-  {{else}}
-    {{data}}
-  {{/if}}
-</template>
-
