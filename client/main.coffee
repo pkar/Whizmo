@@ -11,7 +11,7 @@ root.Template.center.userName = ->
   user?.profile?.name or user?.emails[0]?.address
 
 root.Template.center.data = ->
-  [3, 9, 15, 16, 23, 42]
+  [3, 9, 5, 16, 23, 42]
 
 root.Template.main.greeting = ->
   #console.log Session.get('user')
@@ -33,6 +33,8 @@ root.Template.main.events =
 class root.Whizmo.AppRouter extends Backbone.Router
   routes:
     "": "index"
+    "buildings": "buildings"
+    "meters": "meters"
     "help": "help"
     "search/:query": "search"
     "*path": "error404"
@@ -40,6 +42,12 @@ class root.Whizmo.AppRouter extends Backbone.Router
   initialize: (broker) ->
     @app =
       broker: @broker
+
+  buildings: ->
+    Session.set('content', 'buildings')
+
+  meters: ->
+    Session.set('content', 'meters')
 
   index: ->
     Session.set('content', 'index')
