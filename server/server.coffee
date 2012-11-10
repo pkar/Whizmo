@@ -13,6 +13,7 @@ Meteor.publish "rooms", () ->
 Meteor.methods
   filepickerio: () ->
     process.env.FILEPICKERIO
+
   googleAnalytics: () ->
     process.env.GOOGLE_ANALYTICS
 

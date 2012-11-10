@@ -16,3 +16,5 @@ accounts-password
 http
 accounts-google
 accounts-github
+insecure
+autopublish

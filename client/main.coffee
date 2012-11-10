@@ -7,6 +7,9 @@ root.Template.center.userName = ->
   user = Meteor.user()
   user?.profile?.name or user?.emails[0]?.address
 
+root.Template.center.data = ->
+  [3, 10, 15, 16, 23, 42]
+
 root.Template.main.greeting = ->
   #console.log Session.get('user')
   "Hello #{}"
