@@ -18,6 +18,10 @@
         .container {
             margin-top: 20px;
         }
+        
+        #investment-tab table td {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -100,7 +104,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr onclick="$('#investment-info-modal').modal('show');">
                                 <td>1 Carrot Way, Yourtown, USA</td>
                                 <td>Office</td>
                                 <td>$5000</td>
@@ -129,10 +133,137 @@
                 </div>
                 <div class="tab-pane" id="portfolio-tab">
                     <div class="header">
-                        <div class="btn btn-success pull-right"><i class="icon-white icon-plus"></i> Add a Building</div>
+                        <div class="btn btn-success pull-right" onclick="$('#add-building-modal').modal('show');">
+                            <i class="icon-white icon-plus"></i> Add a Building
+                        </div>
                     </div>
+                </div>
+            </div>
+            
+            
+            <div id="add-building-modal" class="modal hide fade">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Add a Building</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label" for="input_address">Address</label>
+                            <div class="controls">
+                                <input type="text" id="input_address" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_city">City</label>
+                            <div class="controls">
+                                <input type="text" id="input_city" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_state">State</label>
+                            <div class="controls">
+                                <input type="text" id="input_state" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_country">Country</label>
+                            <div class="controls">
+                                <input type="text" id="input_country" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_zip">Zip Code</label>
+                            <div class="controls">
+                                <input type="text" id="input_zip" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_use">Use</label>
+                            <div class="controls">
+                                <input type="text" id="input_use" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_size">Size</label>
+                            <div class="controls">
+                                <input type="text" id="input_size" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_year">Year Built</label>
+                            <div class="controls">
+                                <input type="text" id="input_year" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_class">ISO Class</label>
+                            <div class="controls">
+                            
+                                <select id="input_class">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_floors">Floors</label>
+                            <div class="controls">
+                                <input type="text" id="input_floors" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_occupancy">Occupancy</label>
+                            <div class="controls">
+                                <input type="text" id="input_occupancy" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_improvments">Capital Improvements</label>
+                            <div class="controls">
+                                <input type="text" id="input_improvments" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="input_heating">Heating Source</label>
+                            <div class="controls">
+                                <input type="text" id="input_heating" placeholder="" />
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label" for="input_px">Panoptix Link</label>
+                            <div class="controls">
+                                <input type="text" id="input_px" placeholder="" />
+                            </div>
+                        </div>
+                        
+                    </form>
                     
                 </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Add</a>
+                </div>
+            
+            </div>
+            
+            <div id="investment-info-modal" class="modal hide fade">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Investment Opportunity Information</h3>
+                </div>
+                <div class="modal-body">
+                    Something amazing goes here.
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                </div>
+            
             </div>
             
         </div>
