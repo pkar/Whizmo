@@ -188,20 +188,19 @@
                                     <div class="title">{{location}} / {{usage}}</div>
                                     <div class="opportunity">${{num_format opportunity}}</div>
                                     
-                                    <div class="incentives">
-                                        {{#if incentive_list}}
-                                        <h4>Available Incentives</h4>
-                                        {{#each incentive_list}}
-                                        <div>{{.}}</div>
-                                        {{/each}}
-                                    </div>
-                                    
-                                    <div class="contacts">
-                                        <h4>Next Step Contacts</h4>
-                                        <div>General Contracting: <a href="http://www.johnsoncontrols.com/content/us/en/products/building_efficiency/building.html" target="_new">Johnson Controls</a></div>
-                                        <div>Financing: <a href="http://www.calgreenlending.com/" target="_new">Cal Green Lending</a></div>
-                                    </div>
-                                    
+                                    {{#if incentive_list}}
+                                      <div class="incentives">
+                                          <h4>Available Incentives</h4>
+                                          {{#each incentive_list}}
+                                            <div>{{.}}</div>
+                                          {{/each}}
+                                      </div>
+
+                                      <div class="contacts">
+                                          <h4>Next Step Contacts</h4>
+                                          <div>General Contracting: <a href="http://www.johnsoncontrols.com/content/us/en/products/building_efficiency/building.html" target="_new">Johnson Controls</a></div>
+                                          <div>Financing: <a href="http://www.calgreenlending.com/" target="_new">Cal Green Lending</a></div>
+                                      </div>
                                     {{/if}}
                                 </td>
                             </tr>
