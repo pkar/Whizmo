@@ -109,5 +109,13 @@ class Whizmo.AppRouter extends Backbone.Router
 
 Meteor.startup () ->
   appRouter = new Whizmo.AppRouter()
-  if not Backbone.history.start({pushState: false})
-    appRouter.app.middle.$el.html = new root.Whizmo.Views.Error().render().$el
+  if not Backbone.history.start(pushState: true)
+    appRouter.app.middle.$el.html = new Whizmo.Views.Error().render().$el
+
+  $(document).on 'click', 'a:not([data-bypass])', (evt) ->
+    href = $(@).attr('href')
+    protocol = @protocol + '//'
+
+    if href?[0...protocol.length] != protocol && href.indexOf('javascript:') != 0
+      evt.preventDefault()
+      Backbone.history.navigate(href, true)
