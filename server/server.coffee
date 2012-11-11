@@ -12,7 +12,7 @@ if not Buildings.find().count()
     "usage": "Multifamily",
     "opportunity": 367608,
     "benefit": 0,
-    "incentives": 6,
+    "incentives": 1,
     "size": 30000,
     "total_usage_kwh": 568500,
     "benchmark": "Midwest"
@@ -21,7 +21,7 @@ if not Buildings.find().count()
     "usage": "Office",
     "opportunity": 0,
     "benefit": 413512,
-    "incentives": 1,
+    "incentives": 3,
     "size": 80000,
     "total_usage_kwh": 1441600,
     "benchmark": "West"
@@ -30,7 +30,13 @@ if not Buildings.find().count()
     "usage": "Office",
     "opportunity": 514800,
     "benefit": 0,
-    "incentives": 1,
+    "incentives": 4,
+    "incentive_list": [
+        "Renewable Energy Grant Programs",
+        "Renewable Energy Sales Tax Exemptions",
+        "Solar and Wind Energy Equipment Exemption",
+        "City of Milwaukee - Energy Efficiency (Me2) Business Financing"
+    ],
     "size": 65000,
     "total_usage_kwh": 1235650,
     "benchmark": "Midwest"
@@ -39,7 +45,7 @@ if not Buildings.find().count()
     "usage": "Office",
     "opportunity": 0,
     "benefit": 4010960,
-    "incentives": 1,
+    "incentives": 3,
     "size": 160000,
     "total_usage_kwh": 2560000,
     "benchmark": "North East"
