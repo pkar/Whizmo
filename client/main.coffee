@@ -38,9 +38,10 @@ root.Whizmo.Data.brags =
     "My investments are killing me $0.53 per square foot."
   ],
   'default': [
-    "My buildings have improved 35% over the past 9 weeks.",
-    "My office building at 1 Carrot Way, Anytown USA is performing 43% better than industry average.",
-    "Recent investments have improved 2 of my buildings by over $0.93 per square foot."
+    "I am beating the industry average with 50% of my portfolio.",
+    "Our capital improvements have reduced the carbon footprint of the portfolio by 23,000 tons of CO2.",
+    "My office building at 1 Wall Street, New York NY is is using 43% less energy than the industry average.",
+    "We are saving $4,010,960 in energy costs at 1 Wall Street, New York NY compared to our neighbors."
   ]
 
 
@@ -124,12 +125,13 @@ root.Template.main.events =
     building.benchmark_id = benchmark._id
     Buildings.update({_id: id}, building)
 
-    if building.benefit
-      Session.set('brag', 'good')
-    else
-      Session.set('brag', 'default')
-      #event.stopProgation()
-    return false
+    #return false
+    #if building.benefit
+    #  Session.set('brag', 'good')
+    #else
+    #  Session.set('brag', 'default')
+    #  #event.stopProgation()
+    #return false
 
 class Whizmo.AppRouter extends Backbone.Router
   routes:
