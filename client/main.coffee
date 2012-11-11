@@ -3,6 +3,9 @@ root = global ? window
 Whizmo = Whizmo || {}
 root.Whizmo = Whizmo
 
+Buildings = new Meteor.Collection('buildings')
+Benchmarks = new Meteor.Collection('benchmarks')
+
 root.Template.main.error = ->
   Session.get('error')
 
@@ -59,98 +62,10 @@ root.Template.main.brag = ->
 #
 
 root.Template.main.benchmarks = ->
- [
-    {
-        "usage":"Office",
-        "region":"Midwest",
-        "kwh_per_sf":14,
-        "utility_rate_flat_dol_per_kwh":0.10
-    },
-    {
-        "usage":"Multifamily",
-        "region":"Midwest",
-        "kwh_per_sf":15,
-        "utility_rate_flat_dol_per_kwh":0.10
-    },
-    {
-        "usage":"Office",
-        "region":"North East",
-        "kwh_per_sf":12.3,
-        "utility_rate_flat_dol_per_kwh":0.12
-    },
-    {
-        "usage":"Multifamily",
-        "region":"North East",
-        "kwh_per_sf":15.3,
-        "utility_rate_flat_dol_per_kwh":0.12
-    },
-    {
-        "usage":"Office",
-        "region":"West",
-        "kwh_per_sf":13.7,
-        "utility_rate_flat_dol_per_kwh":0.13
-    },
-    {
-        "usage":"Multifamily",
-        "region":"West",
-        "kwh_per_sf":14,
-        "utility_rate_flat_dol_per_kwh":0.13
-    }
- ]
+  Benchmarks.find()
  
 root.Template.main.building = ->
-  [
-    {
-        "_id":"1",
-        "location":"5211 East Kellogg Avenue, Wichita, KS 67218",
-        "usage":"Multifamily",
-        "opportunity":367608,
-        "benefit":0,
-        "incentives":1,
-        "size":30000,
-        "total_usage_kwh":568500,
-        "benchmark": "Midwest"
-    },
-    {
-        "_id":"2",
-        "location":"333 Market Street, San Francisco, CA 94111",
-        "usage":"Office",
-        "opportunity":0,
-        "benefit":413512,
-        "incentives":3,
-        "size":80000,
-        "total_usage_kwh":1441600,
-        "benchmark": "West"
-    },
-    {
-        "_id":"3",
-        "location":"5300 South Howell Avenue, Milwaukee, WI 53207",
-        "usage":"Office",
-        "opportunity":514800,
-        "benefit":0,
-        "incentives":4,
-        "incentive_list":[
-            "Renewable Energy Grant Programs",
-            "Renewable Energy Sales Tax Exemptions",
-            "Solar and Wind Energy Equipment Exemption",
-            "City of Milwaukee - Energy Efficiency (Me2) Business Financing"
-        ],
-        "size":65000,
-        "total_usage_kwh":1235650,
-        "benchmark": "Midwest"
-    },
-    {
-        "_id":"4",
-        "location":"1 Wall Street, New York NY 10048",
-        "usage":"Office",
-        "opportunity":0,
-        "benefit":4010960,
-        "incentives":3,
-        "size":160000,
-        "total_usage_kwh":2560000,
-        "benchmark": "North East"
-    }
-  ]
+  Buildings.find()
 
 root.Template.main.content = ->
   Session.get('content')
