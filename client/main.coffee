@@ -84,10 +84,6 @@ class Whizmo.AppRouter extends Backbone.Router
     "search/:query": "search"
     "*path": "error404"
 
-  initialize: (broker) ->
-    @app =
-      broker: @broker
-
   edit: ->
     Session.set('content', {type: {edit: true}})
 
@@ -112,7 +108,6 @@ class Whizmo.AppRouter extends Backbone.Router
 
 
 Meteor.startup () ->
-  broker = _.extend({}, Backbone.Events)
-  appRouter = new Whizmo.AppRouter(broker)
+  appRouter = new Whizmo.AppRouter()
   if not Backbone.history.start({pushState: false})
     appRouter.app.middle.$el.html = new root.Whizmo.Views.Error().render().$el
