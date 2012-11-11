@@ -48,8 +48,16 @@
             margin-top:10px;
             margin-bottom:10px;
         }
+        .contacts {
+            margin-top:10px;
+        }
+        
+        .incentives h4, .contacts h4 {
+            margin-bottom: 2px;
+            border-bottom: 1px #BBB solid;
+        }
     </style>
-    
+
     <script type="text/javascript">
         
         function show_investment_modal(id) {
@@ -155,15 +163,22 @@
                                 <td class="modal-data" style="display:none;">
                                     <div class="title">{{location}} / {{usage}}</div>
                                     <div class="opportunity">${{opportunity}}</div>
-
-                                    {{#each incentive_list}}
-                                    <div>{{.}}</div>
-                                    {{/each}}
+                                    
+                                    <div class="incentives">
+                                        {{#if incentive_list}}
+                                        <h4>Available Incentives</h4>
+                                        {{#each incentive_list}}
+                                        <div>{{.}}</div>
+                                        {{/each}}
+                                    </div>
                                     
                                     <div class="contacts">
+                                        <h4>Next Step Contacts</h4>
                                         <div>General Contracting: <a href="http://www.johnsoncontrols.com/content/us/en/products/building_efficiency/building.html" target="_new">Johnson Controls</a></div>
                                         <div>Financing: <a href="http://www.calgreenlending.com/" target="_new">Cal Green Lending</a></div>
                                     </div>
+                                    
+                                    {{/if}}
                                 </td>
                             </tr>
                             {{/each}}
