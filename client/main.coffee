@@ -125,5 +125,5 @@ Meteor.startup () ->
 
   root.Whizmo.Data.Graph.TimeSeries()
   root.Whizmo.Data.Graph.BarChart()
-  root.Whizmo.Data.Graph.BubbleChart()
+  #root.Whizmo.Data.Graph.BubbleChart()
 

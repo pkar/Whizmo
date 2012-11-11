@@ -12,19 +12,30 @@ root.Whizmo.Data.timeSeries = [
   {date: '20111004', b1: 30.1, b2: 10.2, b3: 83.3},
 ]
 
-console.log root.Whizmo.Buildings
 
 root.Whizmo.Data.barChart = [
-  {letter: 'A', frequency: .08},
-  {letter: 'B', frequency: .01},
-  {letter: 'C', frequency: .02},
+  {letter: 'Jan', $: 17859},
+  {letter: 'Feb', $: 16628},
+  {letter: 'Mar', $: 18107},
+  {letter: 'Apr', $: 16867},
+  {letter: 'May', $: 17944},
+  {letter: 'Jun', $: 18867},
+  {letter: 'Jul', $: 19226},
+  {letter: 'Aug', $: 20199},
+  {letter: 'Sep', $: 16866},
+  {letter: 'Oct', $: 17900},
+  {letter: 'Nov', $: 18253},
+  {letter: 'Dec', $: 18496},
 ]
 
 root.Whizmo.Data.Graph = {}
 
 root.Whizmo.Data.Graph.TimeSeries = () ->
 
-  margin = {top: 20, right: 20, bottom: 30, left: 50}
+  Buildings.find({}).forEach (build) ->
+    console.log build
+
+  margin = {top: 30, right: 20, bottom: 30, left: 50}
   parseDate = d3.time.format("%Y%m%d").parse
 
   width = 900 - margin.left - margin.right
@@ -101,11 +112,9 @@ root.Whizmo.Data.Graph.TimeSeries = () ->
     .text((d) -> d.name)
 
 root.Whizmo.Data.Graph.BarChart = () ->
-  margin = {top: 20, right: 20, bottom: 30, left: 40}
+  margin = {top: 20, right: 20, bottom: 30, left: 80}
   width = 900 - margin.left - margin.right
   height = 300 - margin.top - margin.bottom
-
-  formatPercent = d3.format(".0%")
 
   x = d3.scale.ordinal().rangeRoundBands([0, width], .1)
 
@@ -113,7 +122,7 @@ root.Whizmo.Data.Graph.BarChart = () ->
 
   xAxis = d3.svg.axis().scale(x).orient("bottom")
 
-  yAxis = d3.svg.axis().scale(y).orient("left").tickFormat(formatPercent)
+  yAxis = d3.svg.axis().scale(y).orient("left")
 
   svg = d3.select("#barchart").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -122,8 +131,9 @@ root.Whizmo.Data.Graph.BarChart = () ->
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
   data = root.Whizmo.Data.barChart
+
   x.domain(data.map((d) -> d.letter))
-  y.domain([0, d3.max(data, (d) -> d.frequency)])
+  y.domain([0, d3.max(data, (d) -> d.$)])
 
   svg.append("g")
       .attr("class", "x axis")
@@ -134,11 +144,12 @@ root.Whizmo.Data.Graph.BarChart = () ->
       .attr("class", "y axis")
       .call(yAxis)
     .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
+      #.attr("transform", "rotate(-90)")
+      .attr("y", -10)
+      .attr("x", 70)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Frequency")
+      .text("US(Dollars)")
 
   svg.selectAll(".bar")
       .data(data)
@@ -146,9 +157,8 @@ root.Whizmo.Data.Graph.BarChart = () ->
       .attr("class", "bar")
       .attr("x", (d) -> x(d.letter))
       .attr("width", x.rangeBand())
-      .attr("y", (d) -> y(d.frequency))
-      .attr("height", (d) -> height - y(d.frequency))
-
+      .attr("y", (d) -> y(d.$))
+      .attr("height", (d) -> height - y(d.$))
 
 root.Whizmo.Data.Graph.BubbleChart = () ->
   r = 960
