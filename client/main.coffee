@@ -82,7 +82,21 @@ root.Template.main.events =
     Buildings.remove({_id: id})
   "change .benchmark_id": (event) ->
     id = $(event.target).parents('tr').data('id')
-    Buildings.update({_id: id}, {$set: {benchmark_id: event.target.value}})
+    building = Buildings.findOne({_id: id})
+    benchmark = Benchmarks.findOne({_id: event.target.value})
+
+    delta = building.total_usage_kwh / building.size - benchmark.kwh_per_sf
+    diff = delta * building.size * benchmark.utility_rate_flat_dol_per_kwh
+    # TODO: why are these two fields?  Just to make templating easier?
+    if delta >= 0
+      building.benefit = 0
+      building.opportunity = diff
+    else
+      building.benefit = diff
+      building.opportunity = 0
+
+    building.benchmark_id = benchmark._id
+    Buildings.update({_id: id}, building)
 
 class Whizmo.AppRouter extends Backbone.Router
   routes:
