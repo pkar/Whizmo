@@ -38,22 +38,18 @@ root.Whizmo.Data.brags =
     "My investments are killing me $0.53 per square foot."
   ],
   'default': [
-    "My buildings have improved 85% over the past 3 weeks.",
-    "My office building at 1 Carrot Way, Anytown USA is performing 23% better than industry average.",
-    "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
+    "My buildings have improved 35% over the past 9 weeks.",
+    "My office building at 1 Carrot Way, Anytown USA is performing 43% better than industry average.",
+    "Recent investments have improved 2 of my buildings by over $0.93 per square foot."
   ]
-
 
 
 root.Template.main.brag = ->
   if Session.get('brag') is 'good'
     root.Whizmo.Data.brags.good
-  else if Session.get('brag') is 'kindagood'
-    root.Whizmo.Data.brags.kindagood
-  else if Session.get('brag') is 'totallyawesome'
-    root.Whizmo.Data.brags.totallyawesome
   else
     root.Whizmo.Data.brags.default
+
 
 #Total Electricity Use (KwH/Year)	"Total Electricity Use per Square Foot
 #(KwH/SF/Year)"	Benchmark (Average KwH/SF/Year)	Benchmark - Total Use	Potential Total KwH/Year Saved	Current Average Price/KwH	Potential Total $ Saved/Year
@@ -127,7 +123,13 @@ root.Template.main.events =
 
     building.benchmark_id = benchmark._id
     Buildings.update({_id: id}, building)
-    Session.set('brag', ['good', 'kindagood', 'totallyawesome', 'default'][Math.floor(Math.random()*4)] )
+
+    if building.benefit
+      Session.set('brag', 'good')
+    else
+      Session.set('brag', 'default')
+      #event.stopProgation()
+    return false
 
 class Whizmo.AppRouter extends Backbone.Router
   routes:
