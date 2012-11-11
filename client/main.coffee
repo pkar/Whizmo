@@ -103,22 +103,34 @@ class Whizmo.AppRouter extends Backbone.Router
     "": "index"
     "summary": "summary"
     "investment": "investment"
+    "portfolio": "portfolio"
+    "about": "about"
     "add": "add"
     "help": "help"
     "search/:query": "search"
     "*path": "error404"
 
+  tab: (name) ->
+    if not $('#' + name).hasClass('active')
+      $('[href=#' + name + ']').click()
+
   summary: ->
+    @tab 'summary'
     Session.set('content', {type: {summary: true}})
 
   add: ->
     Session.set('content', {type: {add: true}})
 
   investment: ->
+    @tab 'investment'
     Session.set('content', {type: {investment: true}})
 
   portfolio: ->
+    @tab 'portfolio'
     Session.set('content', {type: {portfolio: true}})
+
+  about: ->
+    @tab 'about'
 
   index: ->
     Session.set('content', {type: {index: true}})
