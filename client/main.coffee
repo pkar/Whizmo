@@ -26,42 +26,117 @@ root.Template.main.brag = ->
 # 1,441,600 	 18.02 	 18.39 	 0.37 	 (29,600)	 13.97 	-$413,512
 # 1,235,650 	 19.01 	 18.26 	 (0.75)	 48,750 	 10.56 	$514,800
 # 2,560,000 	 16.00 	 17.81 	 1.81 	 (289,600)	 13.85 	-$4,010,960
+
+
+#
+# when I change the benchmark choice for a building
+# 
+# => get the building in question
+# => get the new benchmark in question
+#
+# change the building's benchmark to the new string
+# calculate the buildings delta from benchmark
+#       ( building.total_usage_kwh / building.size ) - benchmark.kwh_per_sf
+#
+# if the delta is > 0
+#   building.benefit = 0
+#   building.opportunity = delta * building.size * benchmark.utility_rate_flat_dol_per_kwh
+#
+#
+# if the delta is < 0
+#   building.benefit = delta * building.size * benchmark.utility_rate_flat_dol_per_kwh
+#   building.opportunity = 0
+#
+#
+# now we need to update the brags
+#   what % of my portfolio has benefit > 0?
+#
+#   what buildings have benefit > 0
+#
+#   something fake like "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
+#
+
+root.Template.main.benchmarks = ->
+ [
+    {
+        "usage":"Office",
+        "region":"Midwest",
+        "kwh_per_sf":14,
+        "utility_rate_flat_dol_per_kwh":0.10
+    },
+    {
+        "usage":"Multifamily",
+        "region":"Midwest",
+        "kwh_per_sf":15,
+        "utility_rate_flat_dol_per_kwh":0.10
+    },
+    {
+        "usage":"Office",
+        "region":"North East",
+        "kwh_per_sf":12.3,
+        "utility_rate_flat_dol_per_kwh":0.12
+    },
+    {
+        "usage":"Multifamily",
+        "region":"North East",
+        "kwh_per_sf":15.3,
+        "utility_rate_flat_dol_per_kwh":0.12
+    },
+    {
+        "usage":"Office",
+        "region":"West",
+        "kwh_per_sf":13.7,
+        "utility_rate_flat_dol_per_kwh":0.13
+    },
+    {
+        "usage":"Multifamily",
+        "region":"West",
+        "kwh_per_sf":14,
+        "utility_rate_flat_dol_per_kwh":0.13
+    }
+ ]
  
 root.Template.main.building = ->
   [
     {
         "location":"5211 East Kellogg Avenue, Wichita, KS 67218",
         "usage":"Multifamily",
-        "opportunity":"$5000",
+        "opportunity":367608,
+        "benefit":0,
         "incentives":6,
         "size":30000,
         "total_usage_kwh":568500,
-        "total_usage_kwh_per_sf":0,
-        "benchmark_kwh_sf":0,
-        "benchmark_delta":0,
-        "opportunity_kwh":0,
-        "opportunity_dollars":0
+        "benchmark": "Midwest"
     },
     {
         "location":"333 Market Street, San Francisco, CA 94111",
         "usage":"Office",
-        "opportunity":"$7500",
+        "opportunity":0,
+        "benefit":413512,
         "incentives":1,
-        "size":80000
+        "size":80000,
+        "total_usage_kwh":1441600,
+        "benchmark": "West"
     },
     {
         "location":"5300 South Howell Avenue, Milwaukee, WI 53207",
         "usage":"Office",
-        "opportunity":"$7500",
+        "opportunity":514800,
+        "benefit":0,
         "incentives":1,
-        "size":65000
+        "size":65000,
+        "total_usage_kwh":1235650,
+        "benchmark": "Midwest"
     },
     {
         "location":"1 Wall Street, New York NY 10048",
         "usage":"Office",
-        "opportunity":"$7500",
+        "opportunity":0,
+        "benefit":4010960,
         "incentives":1,
-        "size":160000
+        "size":160000,
+        "total_usage_kwh":2560000,
+        "benchmark": "North East"
     }
   ]
 

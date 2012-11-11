@@ -86,7 +86,13 @@
         
             <div class="tab-content">
                 <div class="tab-pane active" id="summary-tab">
-                    CHARTS GO HERE
+                    <div class="chart">
+                        THIS IS A CHART OF 15 MIN METER DATA TIME SERIES
+                        
+                        4 TREND LINES SHOULD BE CHARTED
+                        
+                        X AXIS IS TIME, Y AXIS IS 
+                    </div>
                 </div>
                 <div class="tab-pane" id="investment-tab">
                     <table class="table">
@@ -95,6 +101,7 @@
                                 <th width="50%">Location</th>
                                 <th>Type</th>
                                 <th>Investment Opportunity</th>
+                                <th>Ongoing Benefit</th>
                                 <th>Incentives</th>
                             </tr>
                         </thead>
@@ -104,7 +111,8 @@
                             <tr id="{{_id}}-opportunity" onclick="$('#investment-info-modal').modal('show');">
                                 <td>{{location}}</td>
                                 <td>{{usage}}</td>
-                                <td>{{opportunity}}</td>
+                                <td>${{opportunity}}</td>
+                                <td>${{benefit}}</td>
                                 <td>{{incentives}}</td>
                             </tr>
                             {{/each}}
