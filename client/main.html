@@ -113,21 +113,21 @@
         
             <div class="tab-content">
                 <div class="tab-pane active" id="summary">
-                    <div class="chart well">
+                    <div id="timeseries" class="chart well">
                         THIS IS A CHART OF 15 MIN METER DATA TIME SERIES
                         
                         4 TREND LINES SHOULD BE CHARTED
                         
                         X AXIS IS TIME, Y AXIS IS KWH and KW (consumption and demand)
                     </div>
-                    <div class="chart well">
+                    <div id="barchart" class="chart well">
                         THIS IS A CHART IS MONTHLY COST FOR ALL BUILDINGS
                         
                         THIS SHOULD BE A BAR CHART
                         
                         X AXIS IS MONTHS, Y AXIS IS DOLLARS
                     </div>
-                    <div class="chart well">
+                    <div id="bubblechart" class="chart well">
                         THIS IS A CARBON FOOTPRINT WACKY BUBBLE CHART 
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                         </thead>
                         <tbody>
                             {{#each building}}
-                            <tr>
+                            <tr data-id="{{_id}}">
                                 <td>{{location}}</td>
                                 <td>
                                     
@@ -200,7 +200,7 @@
                                     
                                 </td>
                                 
-                                <td><div class="pull-right btn btn-danger"><i class="icon-minus icon-white"></i> Delete Building</div></td>
+                                <td><div class="pull-right btn btn-danger delete-building"><i class="icon-minus icon-white"></i> Delete Building</div></td>
                             </tr>
                             {{/each}}
                         </tbody>
