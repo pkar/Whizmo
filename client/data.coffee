@@ -6,9 +6,10 @@ root.Whizmo = Whizmo
 root.Whizmo.Data = {}
 
 root.Whizmo.Data.timeSeries = [
-  {date: '20111001', kwh: [90.1, 30.2, 33.3]},
-  {date: '20111002', kwh: [40.1, 80.2, 73.3]},
-  {date: '20111003', kwh: [10.1, 70.2, 13.3]},
+  {date: '20111001', b1: 90.1, b2: 30.2, b3: 33.3},
+  {date: '20111002', b1: 10.1, b2: 40.2, b3: 23.3},
+  {date: '20111003', b1: 20.1, b2: 80.2, b3: 73.3},
+  {date: '20111004', b1: 30.1, b2: 10.2, b3: 83.3},
 ]
 
 root.Whizmo.Data.barChart = [
@@ -47,6 +48,7 @@ root.Whizmo.Data.Graph.TimeSeries = () ->
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
   data = root.Whizmo.Data.timeSeries
+
   color.domain(d3.keys(data[0]).filter((key) -> key isnt "date"))
   data.forEach (d) ->
     d.date = parseDate(d.date)
