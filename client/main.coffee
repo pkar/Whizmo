@@ -20,7 +20,6 @@ root.Template.main.userName = ->
 root.Template.main.data = ->
   [3, 9, 5, 16, 23, 42]
 
-
 root.Whizmo.Data.brags =
   'good': [
     "My buildings have improved 85% over the past 3 weeks.",
@@ -45,11 +44,11 @@ root.Whizmo.Data.brags =
   ]
 
 
-root.Template.main.brag = ->
+root.Template.brags.brag = ->
   if Session.get('brag') is 'good'
-    root.Whizmo.Data.brags.good
+    Whizmo.Data.brags.good
   else
-    root.Whizmo.Data.brags.default
+    Whizmo.Data.brags.default
 
 
 #Total Electricity Use (KwH/Year)	"Total Electricity Use per Square Foot
