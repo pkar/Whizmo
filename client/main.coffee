@@ -20,19 +20,48 @@ root.Template.main.brag = ->
     "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
   ]
 
+#Total Electricity Use (KwH/Year)	"Total Electricity Use per Square Foot
+#(KwH/SF/Year)"	Benchmark (Average KwH/SF/Year)	Benchmark - Total Use	Potential Total KwH/Year Saved	Current Average Price/KwH	Potential Total $ Saved/Year
+# 568,500 	 18.95 	 17.89 	 (1.06)	 31,800 	 11.56 	$367,608
+# 1,441,600 	 18.02 	 18.39 	 0.37 	 (29,600)	 13.97 	-$413,512
+# 1,235,650 	 19.01 	 18.26 	 (0.75)	 48,750 	 10.56 	$514,800
+# 2,560,000 	 16.00 	 17.81 	 1.81 	 (289,600)	 13.85 	-$4,010,960
+ 
 root.Template.main.building = ->
   [
     {
-        "location":"1 Carrot Way, Yourtown, USA",
-        "usage":"Office",
+        "location":"5211 East Kellogg Avenue, Wichita, KS 67218",
+        "usage":"Multifamily",
         "opportunity":"$5000",
-        "incentives":6
+        "incentives":6,
+        "size":30000,
+        "total_usage_kwh":568500,
+        "total_usage_kwh_per_sf":0,
+        "benchmark_kwh_sf":0,
+        "benchmark_delta":0,
+        "opportunity_kwh":0,
+        "opportunity_dollars":0
     },
     {
-        "location":"500 Main Street, Fancypants, CA",
+        "location":"333 Market Street, San Francisco, CA 94111",
         "usage":"Office",
         "opportunity":"$7500",
-        "incentives":1
+        "incentives":1,
+        "size":80000
+    },
+    {
+        "location":"5300 South Howell Avenue, Milwaukee, WI 53207",
+        "usage":"Office",
+        "opportunity":"$7500",
+        "incentives":1,
+        "size":65000
+    },
+    {
+        "location":"1 Wall Street, New York NY 10048",
+        "usage":"Office",
+        "opportunity":"$7500",
+        "incentives":1,
+        "size":160000
     }
   ]
 
