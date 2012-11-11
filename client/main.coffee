@@ -1,7 +1,7 @@
 root = global ? window
 
 Whizmo = Whizmo || {}
-root.Whizmo = Whizmo || {}
+root.Whizmo = Whizmo
 
 root.Template.main.error = ->
   Session.get('error')
@@ -148,7 +148,7 @@ root.Template.main.events =
     console.log event
 
 
-class root.Whizmo.AppRouter extends Backbone.Router
+class Whizmo.AppRouter extends Backbone.Router
   routes:
     "": "index"
     "buildings": "buildings"
@@ -158,10 +158,6 @@ class root.Whizmo.AppRouter extends Backbone.Router
     "help": "help"
     "search/:query": "search"
     "*path": "error404"
-
-  initialize: (broker) ->
-    @app =
-      broker: @broker
 
   edit: ->
     Session.set('content', {type: {edit: true}})
@@ -187,8 +183,14 @@ class root.Whizmo.AppRouter extends Backbone.Router
 
 
 Meteor.startup () ->
-  broker = _.extend({}, Backbone.Events)
-  appRouter = new root.Whizmo.AppRouter(broker)
-  if not Backbone.history.start({pushState: false})
-    appRouter.app.middle.$el.html = new root.Whizmo.Views.Error().render().$el
+  appRouter = new Whizmo.AppRouter()
+  if not Backbone.history.start(pushState: true)
+    appRouter.app.middle.$el.html = new Whizmo.Views.Error().render().$el
 
+  $(document).on 'click', 'a:not([data-bypass])', (evt) ->
+    href = $(@).attr('href')
+    protocol = @protocol + '//'
+
+    if href?[0...protocol.length] != protocol && href.indexOf('javascript:') != 0
+      evt.preventDefault()
+      Backbone.history.navigate(href, true)
