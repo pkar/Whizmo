@@ -50,8 +50,10 @@ root.Template.main.brag = ->
 #
 # now we need to update the brags
 #   what % of my portfolio has benefit > 0?
+#       EXAMPLE "I am outperforming industry benchmarks with 85% of my portfolio."
 #
 #   what buildings have benefit > 0
+#       EXAMPLE "My office building at 1 Carrot Way, Anytown USA is performing 23% better than industry average.",
 #
 #   something fake like "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
 #
@@ -99,41 +101,51 @@ root.Template.main.benchmarks = ->
 root.Template.main.building = ->
   [
     {
+        "_id":"1",
         "location":"5211 East Kellogg Avenue, Wichita, KS 67218",
         "usage":"Multifamily",
         "opportunity":367608,
         "benefit":0,
-        "incentives":6,
+        "incentives":1,
         "size":30000,
         "total_usage_kwh":568500,
         "benchmark": "Midwest"
     },
     {
+        "_id":"2",
         "location":"333 Market Street, San Francisco, CA 94111",
         "usage":"Office",
         "opportunity":0,
         "benefit":413512,
-        "incentives":1,
+        "incentives":3,
         "size":80000,
         "total_usage_kwh":1441600,
         "benchmark": "West"
     },
     {
+        "_id":"3",
         "location":"5300 South Howell Avenue, Milwaukee, WI 53207",
         "usage":"Office",
         "opportunity":514800,
         "benefit":0,
-        "incentives":1,
+        "incentives":4,
+        "incentive_list":[
+            "Renewable Energy Grant Programs",
+            "Renewable Energy Sales Tax Exemptions",
+            "Solar and Wind Energy Equipment Exemption",
+            "City of Milwaukee - Energy Efficiency (Me2) Business Financing"
+        ],
         "size":65000,
         "total_usage_kwh":1235650,
         "benchmark": "Midwest"
     },
     {
+        "_id":"4",
         "location":"1 Wall Street, New York NY 10048",
         "usage":"Office",
         "opportunity":0,
         "benefit":4010960,
-        "incentives":1,
+        "incentives":3,
         "size":160000,
         "total_usage_kwh":2560000,
         "benchmark": "North East"

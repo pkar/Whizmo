@@ -39,7 +39,27 @@
             margin-left:auto;
             margin-right:auto;
         }
+        
+        .opportunity {
+            font-size: 16px;
+            font-weight: bold;
+            color: #171;
+            
+            margin-top:10px;
+            margin-bottom:10px;
+        }
     </style>
+    
+    <script type="text/javascript">
+        
+        function show_investment_modal(id) {
+            var $modal = $('#investment-info-modal');
+            
+            $modal.find('.modal-body').html( $(id).find('.modal-data').html() );
+        
+            $modal.modal('show');
+        }
+    </script>
     
 </head>
 
@@ -72,6 +92,7 @@
             <div class="well">
                 <table class="table brag-table">
                     <tbody>
+                    
                         {{#each brag}}
                         <tr>
                             <td>{{.}}</td>
@@ -85,6 +106,7 @@
                             </td>
                         </tr>
                         {{/each}}
+                        
                     </tbody>
                 </table>
             </div>
@@ -123,12 +145,22 @@
                         <tbody>
                         
                             {{#each building}}
-                            <tr id="{{_id}}-opportunity" onclick="$('#investment-info-modal').modal('show');">
+                            <tr id="{{_id}}-opportunity" onclick="show_investment_modal('#{{_id}}-opportunity');">
                                 <td>{{location}}</td>
                                 <td>{{usage}}</td>
                                 <td>${{opportunity}}</td>
                                 <td>${{benefit}}</td>
                                 <td>{{incentives}}</td>
+                                
+                                <td class="modal-data" style="display:none;">
+                                    <div class="title">{{location}} / {{usage}}</div>
+                                    <div class="opportunity">${{opportunity}}</div>
+
+                                    {{#each incentive_list}}
+                                    <div>{{.}}</div>
+                                    {{/each}}
+                                    
+                                </td>
                             </tr>
                             {{/each}}
                             
@@ -157,12 +189,9 @@
                                 <td>
                                     
                                     <select>
-                                        <option>Default</option>
-                                        <option>Region A</option>
-                                        <option>Region B</option>
-                                        <option>Region C</option>
-                                        <option>Region D</option>
-                                        <option>Region E</option>
+                                        {{#each benchmarks}}
+                                        <option>{{usage}} - {{region}}</option>
+                                        {{/each}}
                                     </select>
                                     
                                 </td>
