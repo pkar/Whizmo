@@ -1,25 +1,6 @@
 [
   {
-    "location": "5211 East Kellogg Avenue, Wichita, KS 67218",
-    "usage": "Lodging",
-    "opportunity": 367608,
-    "benefit": 0,
-    "incentives": 1,
-    "size": 30000,
-    "total_usage_kwh": 568500,
-    "benchmark": "Midwest"
-  },
-  {
-    "location": "333 Market Street, San Francisco, CA 94111",
-    "usage": "Office",
-    "opportunity": 0,
-    "benefit": 413512,
-    "incentives": 3,
-    "size": 80000,
-    "total_usage_kwh": 1441600,
-    "benchmark": "West"
-  },
-  {
+    "rank":1,
     "location": "5300 South Howell Avenue, Milwaukee, WI 53207",
     "usage": "Office",
     "opportunity": 514800,
@@ -36,6 +17,18 @@
     "benchmark": "Midwest"
   },
   {
+    "rank":2,
+    "location": "5211 East Kellogg Avenue, Wichita, KS 67218",
+    "usage": "Lodging",
+    "opportunity": 367608,
+    "benefit": 0,
+    "incentives": 1,
+    "size": 30000,
+    "total_usage_kwh": 568500,
+    "benchmark": "Midwest"
+  },
+  {
+    "rank":3,
     "location": "1 Wall Street, New York NY 10048",
     "usage": "Office",
     "opportunity": 0,
@@ -44,5 +37,16 @@
     "size": 160000,
     "total_usage_kwh": 2560000,
     "benchmark": "North East"
+  },
+  {
+    "rank":4,
+    "location": "333 Market Street, San Francisco, CA 94111",
+    "usage": "Office",
+    "opportunity": 0,
+    "benefit": 413512,
+    "incentives": 3,
+    "size": 80000,
+    "total_usage_kwh": 1441600,
+    "benchmark": "West"
   }
 ]

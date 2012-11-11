@@ -165,6 +165,7 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th>Rank</th>
                                 <th width="50%">Location</th>
                                 <th>Type</th>
                                 <th>Investment Opportunity</th>
@@ -176,6 +177,7 @@
                         
                             {{#each building}}
                             <tr id="{{_id}}-opportunity" onclick="show_investment_modal('#{{_id}}-opportunity');">
+                                <td>{{rank}}</td>
                                 <td>{{location}}</td>
                                 <td>{{usage}}</td>
                                 <td>${{num_format opportunity}}</td>
