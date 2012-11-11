@@ -65,8 +65,8 @@ root.Template.main.brag = ->
 #   something fake like "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
 #
 
-root.Template.main.benchmarks = ->
-  Benchmarks.find()
+root.Template.main.benchmarks = (building) ->
+  Benchmarks.find({usage: building.usage})
  
 root.Template.main.building = ->
   Buildings.find()

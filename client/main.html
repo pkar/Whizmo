@@ -237,7 +237,7 @@
                                 <td>
                                     
                                     <select class="benchmark_id">
-                                        {{#each benchmarks}}
+                                        {{#each benchmarks .}}
                                         <option value="{{_id}}"{{op _id ../benchmark_id}}>{{usage}} - {{region}}</option>
                                         {{/each}}
                                     </select>
