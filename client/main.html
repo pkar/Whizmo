@@ -19,7 +19,7 @@
             margin-top: 20px;
         }
         
-        #investment-tab table td {
+        #investment table td {
             cursor: pointer;
         }
         
@@ -27,11 +27,11 @@
             margin-right: 8px;
         }
         
-        #portfolio-tab select {
+        #portfolio select {
             margin-bottom:0px;
         }
         
-        #portfolio-tab .btn {
+        #portfolio .btn {
             
         }
         
@@ -56,9 +56,9 @@
         <div class="navbar-inner">
             <a class="brand" href="#">Whizmo</a>
             <ul class="nav">
-                <li class="active"><a href="#summary-tab" data-toggle="tab">Summary</a></li>
-                <li><a href="#investment-tab" data-toggle="tab">Investment Guide</a></li>
-                <li><a href="#portfolio-tab" data-toggle="tab">Manage Portfolio</a></li>
+                <li class="active"><a href="#summary" data-toggle="tab">Summary</a></li>
+                <li><a href="#investment" data-toggle="tab">Investment Guide</a></li>
+                <li><a href="#portfolio" data-toggle="tab">Manage Portfolio</a></li>
             </ul>
         </div>
     </div>
@@ -90,7 +90,7 @@
             </div>
         
             <div class="tab-content">
-                <div class="tab-pane active" id="summary-tab">
+                <div class="tab-pane active" id="summary">
                     <div class="chart well">
                         THIS IS A CHART OF 15 MIN METER DATA TIME SERIES
                         
@@ -109,7 +109,7 @@
                         THIS IS A CARBON FOOTPRINT WACKY BUBBLE CHART 
                     </div>
                 </div>
-                <div class="tab-pane" id="investment-tab">
+                <div class="tab-pane" id="investment">
                     <table class="table">
                         <thead>
                             <tr>
@@ -135,7 +135,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="tab-pane" id="portfolio-tab">
+                <div class="tab-pane" id="portfolio">
                     <div class="header">
                         <div id="add-a-building" class="btn btn-success pull-right" onclick="$('#add-building-modal').modal('show');">
                             <i class="icon-white icon-plus"></i> Add a Building
