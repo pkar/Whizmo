@@ -236,9 +236,9 @@
                                 <td>{{location}}</td>
                                 <td>
                                     
-                                    <select>
+                                    <select class="benchmark_id">
                                         {{#each benchmarks}}
-                                        <option value="{{_id}}">{{usage}} - {{region}}</option>
+                                        <option value="{{_id}}"{{op _id ../benchmark_id}}>{{usage}} - {{region}}</option>
                                         {{/each}}
                                     </select>
                                     
