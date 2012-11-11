@@ -18,6 +18,7 @@ root.Whizmo = Whizmo
 
 Buildings = new Meteor.Collection('buildings')
 Benchmarks = new Meteor.Collection('benchmarks')
+Meters = new Meteor.Collection('meters')
 
 root.Template.main.error = ->
   Session.get('error')

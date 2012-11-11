@@ -1,9 +1,28 @@
-InSite
-======
+Hack City - InSite
+==================
+
+Providing actionable insight into building performance
 
 Submit to http://sanfrancisco.cleanweb.co/ San Francisco Hackathon at Verge
-
 http://whizmo.herokuapp.com/
+
+Building Energy
+Utilizing the JCI Panoptix API's - http://whatspossible.johnsoncontrols.com/community/panoptix
+
+
+Team
+----
+Doug Mackay - Energy SME
+
+Paul Karadimas - Hello
+
+Callie Bailey - Architect/Designer
+
+Chris Faulkner - Developer
+
+Yoann Assayag - Energy and software student
+
+Fernando Siu - Analytics/Real Estate Investor
 
 
 Requirments
