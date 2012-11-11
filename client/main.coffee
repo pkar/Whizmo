@@ -50,7 +50,7 @@ root.Whizmo.Data.brags =
     "I am beating the industry average with 50% of my portfolio.",
     "Our capital improvements have reduced the carbon footprint of the portfolio by 23,000 tons of CO2.",
     "My office building at 1 Wall Street, New York NY is is using 43% less energy than the industry average.",
-    "We are saving $4,010,960 in energy costs at 1 Wall Street, New York NY compared to our neighbors."
+    "We are saving $2,010,960 in energy costs at 1 Wall Street, New York NY compared to our neighbors."
   ]
 
 
