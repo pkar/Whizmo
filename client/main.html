@@ -69,6 +69,34 @@
         }
     </script>
     
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var meter_data = google.visualization.arrayToDataTable( Whizmo.Data.pxMeter );
+
+        var meter_chart_options = {
+          title: 'Portfolio Load Profile',
+          backgroundColor: { fill:'transparent' }
+        };
+
+        var metering_chart = new google.visualization.LineChart(document.getElementById('meter_chart'));
+        metering_chart.draw(meter_data, meter_chart_options);
+        
+        
+        var utility_data = google.visualization.arrayToDataTable( Whizmo.Data.utility );
+        var utility_chart_options = {
+          title: 'Portfolio Utility Spend',
+          backgroundColor: { fill:'transparent' },
+          legend: {position: 'none'}
+        };
+        var utility_chart = new google.visualization.ColumnChart(document.getElementById('utility_chart'));
+        utility_chart.draw(utility_data, utility_chart_options);
+        
+      }
+    </script>
+    
 </head>
 
 <body>
@@ -159,6 +187,9 @@
                         4 TREND LINES SHOULD BE CHARTED
                         
                         X AXIS IS TIME, Y AXIS IS KWH and KW (consumption and demand)
+                        
+                        
+                        <div id="meter_chart"></div>
                     </div>
                     <div id="barchart" class="chart well">
                         THIS IS A CHART IS MONTHLY COST FOR ALL BUILDINGS
@@ -166,6 +197,8 @@
                         THIS SHOULD BE A BAR CHART
                         
                         X AXIS IS MONTHS, Y AXIS IS DOLLARS
+                        
+                        <div id="utility_chart"></div>
                     </div>
                 </div>
                 <div class="tab-pane" id="investment">

@@ -5,6 +5,30 @@ root.Whizmo = Whizmo
 
 root.Whizmo.Data = {}
 
+root.Whizmo.Data.metering = [
+  ['Timestamp', 'Building A', 'Building B'],
+  ['2004',  1000,      400],
+  ['2005',  1170,      460],
+  ['2006',  660,       1120],
+  ['2007',  1030,      540]
+]
+
+root.Whizmo.Data.utility = [
+  ['Date', 'Spend'],
+  ['Jan', 129149],
+  ['Feb', 116655],
+  ['Mar', 126477],
+  ['Apr', 120806],
+  ['May', 122841],
+  ['Jun', 132092],
+  ['Jul', 156633],
+  ['Aug', 159393],
+  ['Sep', 137045],
+  ['Oct', 138351],
+  ['Nov', 133344],
+  ['Dec', 130004],
+]
+
 root.Whizmo.Data.timeSeries = [
   {date: '20111001', b1: 90.1, b2: 30.2, b3: 33.3, b4: 53.3},
   {date: '20111002', b1: 10.1, b2: 40.2, b3: 23.3, b4: 83.3},
