@@ -9,7 +9,7 @@ Buildings = new Meteor.Collection('buildings')
 if not Buildings.find().count()
   Buildings.insert
     "location": "5211 East Kellogg Avenue, Wichita, KS 67218",
-    "usage": "Multifamily",
+    "usage": "Lodging",
     "opportunity": 367608,
     "benefit": 0,
     "incentives": 1,
@@ -58,7 +58,7 @@ if not Benchmarks.find().count()
     "kwh_per_sf": 14,
     "utility_rate_flat_dol_per_kwh": 0.10
   Benchmarks.insert
-    "usage": "Multifamily",
+    "usage": "Lodging",
     "region": "Midwest",
     "kwh_per_sf": 15,
     "utility_rate_flat_dol_per_kwh": 0.10
@@ -68,7 +68,7 @@ if not Benchmarks.find().count()
     "kwh_per_sf": 12.3,
     "utility_rate_flat_dol_per_kwh": 0.12
   Benchmarks.insert
-    "usage": "Multifamily",
+    "usage": "Lodging",
     "region": "North East",
     "kwh_per_sf": 15.3,
     "utility_rate_flat_dol_per_kwh": 0.12
@@ -78,7 +78,7 @@ if not Benchmarks.find().count()
     "kwh_per_sf": 13.7,
     "utility_rate_flat_dol_per_kwh": 0.13
   Benchmarks.insert
-    "usage": "Multifamily",
+    "usage": "Lodging",
     "region": "West",
     "kwh_per_sf": 14,
     "utility_rate_flat_dol_per_kwh": 0.13
