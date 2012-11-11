@@ -25,8 +25,8 @@ root.Whizmo.Data.Graph.TimeSeries = () ->
   margin = {top: 20, right: 20, bottom: 30, left: 50}
   parseDate = d3.time.format("%Y%m%d").parse
 
-  width = 960 - margin.left - margin.right
-  height = 500 - margin.top - margin.bottom
+  width = 900 - margin.left - margin.right
+  height = 300 - margin.top - margin.bottom
 
   x = d3.time.scale().range([0, width])
   y = d3.scale.linear().range([height, 0])
@@ -100,8 +100,8 @@ root.Whizmo.Data.Graph.TimeSeries = () ->
 
 root.Whizmo.Data.Graph.BarChart = () ->
   margin = {top: 20, right: 20, bottom: 30, left: 40}
-  width = 960 - margin.left - margin.right
-  height = 500 - margin.top - margin.bottom
+  width = 900 - margin.left - margin.right
+  height = 300 - margin.top - margin.bottom
 
   formatPercent = d3.format(".0%")
 
