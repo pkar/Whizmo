@@ -6,10 +6,10 @@ root.Whizmo = Whizmo
 root.Whizmo.Data = {}
 
 root.Whizmo.Data.timeSeries = [
-  {date: '20111001', b1: 90.1, b2: 30.2, b3: 33.3},
-  {date: '20111002', b1: 10.1, b2: 40.2, b3: 23.3},
-  {date: '20111003', b1: 20.1, b2: 80.2, b3: 73.3},
-  {date: '20111004', b1: 30.1, b2: 10.2, b3: 83.3},
+  {date: '20111001', b1: 90.1, b2: 30.2, b3: 33.3, b4: 53.3},
+  {date: '20111002', b1: 10.1, b2: 40.2, b3: 23.3, b4: 83.3},
+  {date: '20111003', b1: 20.1, b2: 80.2, b3: 73.3, b4: 73.3},
+  {date: '20111004', b1: 30.1, b2: 10.2, b3: 83.3, b4: 13.3},
 ]
 
 
@@ -32,6 +32,7 @@ root.Whizmo.Data.Graph = {}
 
 root.Whizmo.Data.Graph.TimeSeries = () ->
 
+  console.log Buildings.find()
   Buildings.find({}).forEach (build) ->
     console.log build
 
