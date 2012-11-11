@@ -86,7 +86,7 @@ root.Template.main.events =
     benchmark = Benchmarks.findOne({_id: event.target.value})
 
     delta = building.total_usage_kwh / building.size - benchmark.kwh_per_sf
-    diff = delta * building.size * benchmark.utility_rate_flat_dol_per_kwh
+    diff = Math.round(delta * building.size * benchmark.utility_rate_flat_dol_per_kwh)
     # TODO: why are these two fields?  Just to make templating easier?
     if delta >= 0
       building.benefit = 0
