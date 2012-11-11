@@ -80,25 +80,24 @@ root.Template.main.events =
 class Whizmo.AppRouter extends Backbone.Router
   routes:
     "": "index"
-    "buildings": "buildings"
-    "meters": "meters"
+    "summary": "summary"
+    "investment": "investment"
     "add": "add"
-    "edit": "edit"
     "help": "help"
     "search/:query": "search"
     "*path": "error404"
 
-  edit: ->
-    Session.set('content', {type: {edit: true}})
+  summary: ->
+    Session.set('content', {type: {summary: true}})
 
   add: ->
     Session.set('content', {type: {add: true}})
 
-  buildings: ->
-    Session.set('content', {type: {buildings: true}})
+  investment: ->
+    Session.set('content', {type: {investment: true}})
 
-  meters: ->
-    Session.set('content', {type: {meters: true}})
+  portfolio: ->
+    Session.set('content', {type: {portfolio: true}})
 
   index: ->
     Session.set('content', {type: {index: true}})
@@ -107,7 +106,7 @@ class Whizmo.AppRouter extends Backbone.Router
     Session.set('content', {type: {help: true}})
 
   error404: () ->
-    document.title = "Error"
+    #document.title = "Error"
     Session.set('content', 'error')
 
 
@@ -127,5 +126,4 @@ Meteor.startup () ->
   root.Whizmo.Data.Graph.TimeSeries()
   root.Whizmo.Data.Graph.BarChart()
   root.Whizmo.Data.Graph.BubbleChart()
-
 

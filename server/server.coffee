@@ -4,6 +4,7 @@ Whizmo = Whizmo || {}
 root.Whizmo = Whizmo
 
 Buildings = new Meteor.Collection('buildings')
+console.log Meteor
 
 # create some fake data if the db is empty
 if not Buildings.find().count()
