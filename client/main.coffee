@@ -73,7 +73,9 @@ root.Template.main.content = ->
 root.Template.main.events =
   "click .blah": (event) ->
     console.log event
-
+  "click .delete-building": (event) ->
+    id = $(event.target).parents('tr').data('id')
+    Buildings.remove({_id: id})
 
 class Whizmo.AppRouter extends Backbone.Router
   routes:

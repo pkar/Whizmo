@@ -184,7 +184,7 @@
                         </thead>
                         <tbody>
                             {{#each building}}
-                            <tr>
+                            <tr data-id="{{_id}}">
                                 <td>{{location}}</td>
                                 <td>
                                     
@@ -196,7 +196,7 @@
                                     
                                 </td>
                                 
-                                <td><div class="pull-right btn btn-danger"><i class="icon-minus icon-white"></i> Delete Building</div></td>
+                                <td><div class="pull-right btn btn-danger delete-building"><i class="icon-minus icon-white"></i> Delete Building</div></td>
                             </tr>
                             {{/each}}
                         </tbody>
