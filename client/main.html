@@ -6,16 +6,6 @@
   <meta name="description" content="Whizmo">
   <meta name="author" content="Whizmo">
   
-    <script type="text/javascript">
-        function show_investment_modal(id) {
-            var $modal = $('#investment-info-modal');
-            
-            $modal.find('.modal-body').html( $(id).find('.modal-data').html() );
-        
-            $modal.modal('show');
-        }
-    </script>
-    
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart", "geochart"]});
@@ -61,9 +51,6 @@
     
           var chart = new google.visualization.GeoChart(document.getElementById('map_chart'));
           chart.draw(data, options);
-
-        
-        
       }
     </script>
     
@@ -75,6 +62,35 @@
     {{> main }}
   </div>
 </body>
+
+<template name="investment-modal">
+<div id="investment-modal-{{_id}}" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Investment Opportunity Information</h3>
+  </div>
+  <div class="modal-body">
+    <div class="title">{{location}} / {{usage}}</div>
+    <div class="opportunity">${{num_format opportunity}}</div>
+    {{#if incentive_list}}
+      <div class="incentives">
+        <h4>Available Incentives</h4>
+        {{#each incentive_list}}
+          <div>{{.}}</div>
+        {{/each}}
+      </div>
+      <div class="contacts">
+        <h4>Next Step Contacts</h4>
+        <div>General Contracting: <a href="http://www.johnsoncontrols.com/content/us/en/products/building_efficiency/building.html" target="_new">Johnson Controls</a></div>
+        <div>Financing: <a href="http://www.calgreenlending.com/" target="_new">Cal Green Lending</a></div>
+      </div>
+    {{/if}}
+  </div>
+  <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+</template>
 
 <template name="header">
 
@@ -176,33 +192,13 @@
                         <tbody>
                         
                             {{#each building}}
-                            <tr id="{{_id}}-opportunity" onclick="show_investment_modal('#{{_id}}-opportunity');">
+                            <tr data-target="#investment-modal-{{_id}}" data-toggle="modal" data-bypass>
                                 <td>{{rank}}</td>
                                 <td>{{location}}</td>
                                 <td>{{usage}}</td>
                                 <td>${{num_format opportunity}}</td>
                                 <td>${{num_format benefit}}</td>
                                 <td>{{incentives}}</td>
-                                
-                                <td class="modal-data" style="display:none;">
-                                    <div class="title">{{location}} / {{usage}}</div>
-                                    <div class="opportunity">${{num_format opportunity}}</div>
-                                    
-                                    {{#if incentive_list}}
-                                      <div class="incentives">
-                                          <h4>Available Incentives</h4>
-                                          {{#each incentive_list}}
-                                            <div>{{.}}</div>
-                                          {{/each}}
-                                      </div>
-
-                                      <div class="contacts">
-                                          <h4>Next Step Contacts</h4>
-                                          <div>General Contracting: <a href="http://www.johnsoncontrols.com/content/us/en/products/building_efficiency/building.html" target="_new">Johnson Controls</a></div>
-                                          <div>Financing: <a href="http://www.calgreenlending.com/" target="_new">Cal Green Lending</a></div>
-                                      </div>
-                                    {{/if}}
-                                </td>
                             </tr>
                             {{/each}}
                             
@@ -212,7 +208,7 @@
                 <div class="tab-pane" id="portfolio">
                     {{> brags }}
                     <div class="header">
-                        <div id="add-a-building" class="btn btn-success pull-right" onclick="$('#add-building-modal').modal('show');">
+                        <div id="add-a-building" class="btn btn-success pull-right" data-target="#add-building-modal" data-toggle="modal" data-bypass>
                             <i class="icon-white icon-plus"></i> Add a Building
                         </div>
                     </div>
@@ -361,21 +357,10 @@
                 </div>
             
             </div>
-            
-            <div id="investment-info-modal" class="modal hide fade">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h3>Investment Opportunity Information</h3>
-                </div>
-                <div class="modal-body">
-                    Something amazing goes here.
-                </div>
-                <div class="modal-footer">
-                    <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            
-            </div>
-            
+
+            {{#each building}}
+              {{> investment-modal . }}
+            {{/each}}
         </div>
 
 </template>
