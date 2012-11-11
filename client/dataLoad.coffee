@@ -11150,7 +11150,7 @@ pxMeter = [
 
 arr = []
 for met in pxMeter
-  arr.push met.TS, met.Val
+  arr.push [met.TS, met.Val]
 
 root.Whizmo.Data.pxMeter = arr
 
