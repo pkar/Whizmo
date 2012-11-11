@@ -59,6 +59,22 @@
     </style>
 
     <script type="text/javascript">
+        function addCommas(nStr)
+        {
+            nStr += '';
+            x = nStr.split('.');
+            x1 = x[0];
+            x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1' + ',' + '$2');
+            }
+            return x1 + x2;
+        }
+
+        Handlebars.registerHelper('num_format', function(number) {
+          return addCommas(number);
+        });
         
         function show_investment_modal(id) {
             var $modal = $('#investment-info-modal');
@@ -166,7 +182,7 @@
                                 </tr>
                                 <tr>
                                     <td>Capital Improvements Spend to Date</td>
-                                    <td>$345000</td>
+                                    <td>$345,000</td>
                                 </tr>
                                 <tr>
                                     <td>Annual Income</td>
@@ -174,7 +190,7 @@
                                 </tr>
                                 <tr>
                                     <td>Total Potential 10 yr Savings</td>
-                                    <td>$8824080</td>
+                                    <td>$8,824,080</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -182,22 +198,9 @@
                     </div>
                     
                     <div id="timeseries" class="chart well">
-                        THIS IS A CHART OF 15 MIN METER DATA TIME SERIES
-                        
-                        4 TREND LINES SHOULD BE CHARTED
-                        
-                        X AXIS IS TIME, Y AXIS IS KWH and KW (consumption and demand)
-                        
-                        
                         <div id="meter_chart"></div>
                     </div>
                     <div id="barchart" class="chart well">
-                        THIS IS A CHART IS MONTHLY COST FOR ALL BUILDINGS
-                        
-                        THIS SHOULD BE A BAR CHART
-                        
-                        X AXIS IS MONTHS, Y AXIS IS DOLLARS
-                        
                         <div id="utility_chart"></div>
                     </div>
                 </div>
@@ -218,8 +221,8 @@
                             <tr id="{{_id}}-opportunity" onclick="show_investment_modal('#{{_id}}-opportunity');">
                                 <td>{{location}}</td>
                                 <td>{{usage}}</td>
-                                <td>${{opportunity}}</td>
-                                <td>${{benefit}}</td>
+                                <td>${{#num_format opportunity}}{{/num_format}}</td>
+                                <td>${{#num_format benefit}}{{/num_format}}</td>
                                 <td>{{incentives}}</td>
                                 
                                 <td class="modal-data" style="display:none;">
