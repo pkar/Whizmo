@@ -4,6 +4,15 @@ root = global ? window
 Handlebars.registerHelper 'op', (v1, v2) ->
   ' selected="selected"' if v1 == v2
 
+Handlebars.registerHelper 'num_format', (number) ->
+  x = number.toString().split('.')
+  x1 = x[0]
+  x2 = if x.length > 1 then '.' + x[1] else ''
+  rgx = /(\d+)(\d{3})/
+  while rgx.test(x1)
+    x1 = x1.replace(rgx, '$1' + ',' + '$2')
+  x1 + x2
+
 Whizmo = Whizmo || {}
 root.Whizmo = Whizmo
 
