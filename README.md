@@ -13,10 +13,15 @@ Utilizing the JCI Panoptix API's - http://whatspossible.johnsoncontrols.com/comm
 Team
 ----
 Doug Mackay - Energy SME
+
 Paul Karadimas - Hello
+
 Callie Bailey - Architect/Designer
+
 Chris Faulkner - Developer
+
 Yoann Assayag - Energy and software student
+
 Fernando Siu - Analytics/Real Estate Investor
 
 
