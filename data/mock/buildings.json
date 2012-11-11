@@ -1,6 +1,7 @@
 [
   {
     "rank":1,
+    "rank-style":"error",
     "location": "5300 South Howell Avenue, Milwaukee, WI 53207",
     "usage": "Office",
     "opportunity": 514800,
@@ -29,6 +30,7 @@
   },
   {
     "rank":3,
+    "rank-style":"success",
     "location": "1 Wall Street, New York NY 10048",
     "usage": "Office",
     "opportunity": 0,
