@@ -121,3 +121,9 @@ Meteor.startup () ->
     if href?[0...protocol.length] != protocol && href.indexOf('javascript:') != 0
       evt.preventDefault()
       Backbone.history.navigate(href, true)
+
+  root.Whizmo.Data.Graph.TimeSeries()
+  root.Whizmo.Data.Graph.BarChart()
+  root.Whizmo.Data.Graph.BubbleChart()
+
+
