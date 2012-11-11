@@ -4,6 +4,7 @@ Whizmo = Whizmo || {}
 root.Whizmo = Whizmo
 
 Buildings = new Meteor.Collection('buildings')
+Benchmarks = new Meteor.Collection('benchmarks')
 
 root.Template.main.error = ->
   Session.get('error')
@@ -59,44 +60,7 @@ root.Template.main.brag = ->
 #
 
 root.Template.main.benchmarks = ->
- [
-    {
-        "usage":"Office",
-        "region":"Midwest",
-        "kwh_per_sf":14,
-        "utility_rate_flat_dol_per_kwh":0.10
-    },
-    {
-        "usage":"Multifamily",
-        "region":"Midwest",
-        "kwh_per_sf":15,
-        "utility_rate_flat_dol_per_kwh":0.10
-    },
-    {
-        "usage":"Office",
-        "region":"North East",
-        "kwh_per_sf":12.3,
-        "utility_rate_flat_dol_per_kwh":0.12
-    },
-    {
-        "usage":"Multifamily",
-        "region":"North East",
-        "kwh_per_sf":15.3,
-        "utility_rate_flat_dol_per_kwh":0.12
-    },
-    {
-        "usage":"Office",
-        "region":"West",
-        "kwh_per_sf":13.7,
-        "utility_rate_flat_dol_per_kwh":0.13
-    },
-    {
-        "usage":"Multifamily",
-        "region":"West",
-        "kwh_per_sf":14,
-        "utility_rate_flat_dol_per_kwh":0.13
-    }
- ]
+  Benchmarks.find()
  
 root.Template.main.building = ->
   Buildings.find()

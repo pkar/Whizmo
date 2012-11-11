@@ -44,6 +44,39 @@ if not Buildings.find().count()
     "total_usage_kwh": 2560000,
     "benchmark": "North East"
 
+Benchmarks = new Meteor.Collection('benchmarks')
+if not Benchmarks.find().count()
+  Benchmarks.insert
+    "usage": "Office",
+    "region": "Midwest",
+    "kwh_per_sf": 14,
+    "utility_rate_flat_dol_per_kwh": 0.10
+  Benchmarks.insert
+    "usage": "Multifamily",
+    "region": "Midwest",
+    "kwh_per_sf": 15,
+    "utility_rate_flat_dol_per_kwh": 0.10
+  Benchmarks.insert
+    "usage": "Office",
+    "region": "North East",
+    "kwh_per_sf": 12.3,
+    "utility_rate_flat_dol_per_kwh": 0.12
+  Benchmarks.insert
+    "usage": "Multifamily",
+    "region": "North East",
+    "kwh_per_sf": 15.3,
+    "utility_rate_flat_dol_per_kwh": 0.12
+  Benchmarks.insert
+    "usage": "Office",
+    "region": "West",
+    "kwh_per_sf": 13.7,
+    "utility_rate_flat_dol_per_kwh": 0.13
+  Benchmarks.insert
+    "usage": "Multifamily",
+    "region": "West",
+    "kwh_per_sf": 14,
+    "utility_rate_flat_dol_per_kwh": 0.13
+
 Meters = new Meteor.Collection('meters')
 
 Meteor.publish "buildings", () ->
