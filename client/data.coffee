@@ -12,6 +12,8 @@ root.Whizmo.Data.timeSeries = [
   {date: '20111004', b1: 30.1, b2: 10.2, b3: 83.3},
 ]
 
+console.log root.Whizmo.Buildings
+
 root.Whizmo.Data.barChart = [
   {letter: 'A', frequency: .08},
   {letter: 'B', frequency: .01},
