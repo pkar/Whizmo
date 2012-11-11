@@ -20,12 +20,40 @@ root.Template.main.userName = ->
 root.Template.main.data = ->
   [3, 9, 5, 16, 23, 42]
 
-root.Template.main.brag = ->
-  [
+
+root.Whizmo.Data.brags =
+  'good': [
+    "My buildings have improved 85% over the past 3 weeks.",
+    "My office building at 1 Carrot Way, Anytown USA is performing 23% better than industry average.",
+    "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
+  ],
+  'kindagood': [
+    "My buildings suck energy.",
+    "Hello",
+    "My investments are killing me $0.53 per square foot."
+  ],
+  'totallyawesome': [
+    "My buildings suck energy.",
+    "Hello",
+    "My investments are killing me $0.53 per square foot."
+  ],
+  'default': [
     "My buildings have improved 85% over the past 3 weeks.",
     "My office building at 1 Carrot Way, Anytown USA is performing 23% better than industry average.",
     "Recent investments have improved 3 of my buildings by over $0.53 per square foot."
   ]
+
+
+
+root.Template.main.brag = ->
+  if Session.get('brag') is 'good'
+    root.Whizmo.Data.brags.good
+  else if Session.get('brag') is 'kindagood'
+    root.Whizmo.Data.brags.kindagood
+  else if Session.get('brag') is 'totallyawesome'
+    root.Whizmo.Data.brags.totallyawesome
+  else
+    root.Whizmo.Data.brags.default
 
 #Total Electricity Use (KwH/Year)	"Total Electricity Use per Square Foot
 #(KwH/SF/Year)"	Benchmark (Average KwH/SF/Year)	Benchmark - Total Use	Potential Total KwH/Year Saved	Current Average Price/KwH	Potential Total $ Saved/Year
@@ -77,9 +105,11 @@ root.Template.main.content = ->
 root.Template.main.events =
   "click .blah": (event) ->
     console.log event
+
   "click .delete-building": (event) ->
     id = $(event.target).parents('tr').data('id')
     Buildings.remove({_id: id})
+
   "change .benchmark_id": (event) ->
     id = $(event.target).parents('tr').data('id')
     building = Buildings.findOne({_id: id})
@@ -97,6 +127,7 @@ root.Template.main.events =
 
     building.benchmark_id = benchmark._id
     Buildings.update({_id: id}, building)
+    Session.set('brag', ['good', 'kindagood', 'totallyawesome', 'default'][Math.floor(Math.random()*4)] )
 
 class Whizmo.AppRouter extends Backbone.Router
   routes:
