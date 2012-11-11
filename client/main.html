@@ -161,36 +161,35 @@
 
 </template>
 
+<template name="brags">
+    <div class="well">
+        <table class="table brag-table">
+            <tbody>
+                {{#each brag}}
+                <tr>
+                    <td>{{.}}</td>
+                    <td>
+                       <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
+                         <img src="img/icn-twitter.png" />
+                       </a>
+                       <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
+                        <img src="img/icn-facebook.png" />
+                       </a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
 <template name="main">
 
         <div class="container">
 
-            <div class="well">
-
-                <table class="table brag-table">
-                    <tbody>
-                    
-                        {{#each brag}}
-                        <tr>
-                            <td>{{.}}</td>
-                            <td>
-                               <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
-                                 <img src="img/icn-twitter.png" />
-                               </a>
-                               <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
-                                <img src="img/icn-facebook.png" />
-                               </a>
-                            </td>
-                        </tr>
-                        {{/each}}
-                        
-                    </tbody>
-                </table>
-            </div>
-        
             <div class="tab-content">
+
                 <div class="tab-pane active" id="summary">
-                
+                    {{> brags }}
                     <div class="well">
                         <h4>My Portfolio</h4>
                         <table class="table">
@@ -235,6 +234,7 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="investment">
+                    {{> brags }}
                     <table class="table">
                         <thead>
                             <tr>
@@ -282,6 +282,7 @@
                     </table>
                 </div>
                 <div class="tab-pane" id="portfolio">
+                    {{> brags }}
                     <div class="header">
                         <div id="add-a-building" class="btn btn-success pull-right" onclick="$('#add-building-modal').modal('show');">
                             <i class="icon-white icon-plus"></i> Add a Building
