@@ -11150,7 +11150,13 @@ pxMeter = [
 
 arr = []
 for met in pxMeter
-  arr.push [met.TS, met.Val]
+  year = met.TS[0..3]
+  month = met.TS[5..6]
+  day = met.TS[8..9]
+  hour = met.TS[11..12]
+  minute = met.TS[14..15]
+  time = "#{year}-#{month}-#{day} #{hour}:#{minute}"
+  arr.push [time, parseFloat(met.Val)]
 
 root.Whizmo.Data.pxMeter = arr
 
