@@ -7,23 +7,6 @@
   <meta name="author" content="Whizmo">
   
     <script type="text/javascript">
-        function addCommas(nStr)
-        {
-            nStr += '';
-            x = nStr.split('.');
-            x1 = x[0];
-            x2 = x.length > 1 ? '.' + x[1] : '';
-            var rgx = /(\d+)(\d{3})/;
-            while (rgx.test(x1)) {
-                x1 = x1.replace(rgx, '$1' + ',' + '$2');
-            }
-            return x1 + x2;
-        }
-
-        Handlebars.registerHelper('num_format', function(number) {
-          return addCommas(number);
-        });
-        
         function show_investment_modal(id) {
             var $modal = $('#investment-info-modal');
             
@@ -117,12 +100,8 @@
                 <tr>
                     <td>{{.}}</td>
                     <td>
-                       <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status=">
-                         <img src="img/icn-twitter.png" />
-                       </a>
-                       <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=">
-                        <img src="img/icn-facebook.png" />
-                       </a>
+                       <a title="Share Through Twitter" target="_blank" href="http://twitter.com/home?status="><img src="img/icn-twitter.png" /></a>
+                       <a title="Share Through Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u="><img src="img/icn-facebook.png" /></a>
                     </td>
                 </tr>
                 {{/each}}
@@ -199,13 +178,13 @@
                             <tr id="{{_id}}-opportunity" onclick="show_investment_modal('#{{_id}}-opportunity');">
                                 <td>{{location}}</td>
                                 <td>{{usage}}</td>
-                                <td>${{#num_format opportunity}}{{/num_format}}</td>
-                                <td>${{#num_format benefit}}{{/num_format}}</td>
+                                <td>${{num_format opportunity}}</td>
+                                <td>${{num_format benefit}}</td>
                                 <td>{{incentives}}</td>
                                 
                                 <td class="modal-data" style="display:none;">
                                     <div class="title">{{location}} / {{usage}}</div>
-                                    <div class="opportunity">${{#num_format opportunity}}{{/num_format}}</div>
+                                    <div class="opportunity">${{num_format opportunity}}</div>
                                     
                                     <div class="incentives">
                                         {{#if incentive_list}}
