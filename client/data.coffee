@@ -32,9 +32,7 @@ root.Whizmo.Data.Graph = {}
 
 root.Whizmo.Data.Graph.TimeSeries = () ->
 
-  console.log Buildings.find()
-  Buildings.find({}).forEach (build) ->
-    console.log build
+  console.log Buildings.find({}).fetch()
 
   margin = {top: 30, right: 20, bottom: 30, left: 50}
   parseDate = d3.time.format("%Y%m%d").parse
