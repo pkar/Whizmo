@@ -1,5 +1,9 @@
 root = global ? window
 
+# way to suck at everything, Handlebars.
+Handlebars.registerHelper 'op', (v1, v2) ->
+  ' selected="selected"' if v1 == v2
+
 Whizmo = Whizmo || {}
 root.Whizmo = Whizmo
 
@@ -76,6 +80,9 @@ root.Template.main.events =
   "click .delete-building": (event) ->
     id = $(event.target).parents('tr').data('id')
     Buildings.remove({_id: id})
+  "change .benchmark_id": (event) ->
+    id = $(event.target).parents('tr').data('id')
+    Buildings.update({_id: id}, {$set: {benchmark_id: event.target.value}})
 
 class Whizmo.AppRouter extends Backbone.Router
   routes:
