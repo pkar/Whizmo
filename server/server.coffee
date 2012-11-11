@@ -26,6 +26,7 @@ load_fixture = (name, model, clean=true) ->
 
 load_fixture('mock/buildings', Buildings)
 load_fixture('mock/benchmarks', Benchmarks)
+load_fixture('meters', Meters)
 
 Meteor.publish "buildings", () ->
   Meteor.buildings.find({})
