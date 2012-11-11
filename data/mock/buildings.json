@@ -30,6 +30,17 @@
   },
   {
     "rank":3,
+    "location": "333 Market Street, San Francisco, CA 94111",
+    "usage": "Office",
+    "opportunity": 0,
+    "benefit": 413512,
+    "incentives": 3,
+    "size": 80000,
+    "total_usage_kwh": 1441600,
+    "benchmark": "West"
+  },
+  {
+    "rank":4,
     "rank-style":"success",
     "location": "1 Wall Street, New York NY 10048",
     "usage": "Office",
@@ -39,16 +50,5 @@
     "size": 160000,
     "total_usage_kwh": 2560000,
     "benchmark": "North East"
-  },
-  {
-    "rank":4,
-    "location": "333 Market Street, San Francisco, CA 94111",
-    "usage": "Office",
-    "opportunity": 0,
-    "benefit": 413512,
-    "incentives": 3,
-    "size": 80000,
-    "total_usage_kwh": 1441600,
-    "benchmark": "West"
   }
 ]
