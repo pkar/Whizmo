@@ -93,7 +93,7 @@
                         <tbody>
                         
                             {{#each building}}
-                            <tr onclick="$('#investment-info-modal').modal('show');">
+                            <tr id="{{_id}}-opportunity" onclick="$('#investment-info-modal').modal('show');">
                                 <td>{{location}}</td>
                                 <td>{{usage}}</td>
                                 <td>{{opportunity}}</td>
@@ -115,6 +115,7 @@
                         <thead>
                             <tr>
                                 <th>Address</th>
+                                <th>Benchmark</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -122,7 +123,20 @@
                             {{#each building}}
                             <tr>
                                 <td>{{location}}</td>
-                                <td><div class="pull-right btn btn-danger"><i class="icon-minus icon-white"></i> Delete Building</div></td>
+                                <td>
+                                    
+                                    <select>
+                                        <option>Default</option>
+                                        <option>Region A</option>
+                                        <option>Region B</option>
+                                        <option>Region C</option>
+                                        <option>Region D</option>
+                                        <option>Region E</option>
+                                    </select>
+                                    
+                                </td>
+                                
+                                <td><div class="pull-right btn btn-small btn-danger"><i class="icon-minus icon-white"></i> Delete Building</div></td>
                             </tr>
                             {{/each}}
                         </tbody>
