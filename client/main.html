@@ -87,28 +87,51 @@
     
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
+      google.load("visualization", "1", {packages:["corechart", "geochart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
         var meter_data = google.visualization.arrayToDataTable( Whizmo.Data.pxMeter );
 
         var meter_chart_options = {
-          title: 'Portfolio Load Profile',
-          backgroundColor: { fill:'transparent' }
+          //title: 'Portfolio Load Profile',
+          backgroundColor: { fill:'transparent' },
+          legend: {position: 'none'}
         };
-
         var metering_chart = new google.visualization.LineChart(document.getElementById('meter_chart'));
         metering_chart.draw(meter_data, meter_chart_options);
         
         
         var utility_data = google.visualization.arrayToDataTable( Whizmo.Data.utility );
         var utility_chart_options = {
-          title: 'Portfolio Utility Spend',
+          //title: 'Portfolio Utility Spend',
           backgroundColor: { fill:'transparent' },
           legend: {position: 'none'}
         };
         var utility_chart = new google.visualization.ColumnChart(document.getElementById('utility_chart'));
         utility_chart.draw(utility_data, utility_chart_options);
+        
+        
+        var data = google.visualization.arrayToDataTable([
+            ['Building',   'Opportunity', 'Benefit'],
+            ['5211 East Kellogg Avenue, Wichita, KS 67218',      367608,   0],
+            ['333 Market Street, San Francisco, CA 94111',     0,    413512],
+            ['5300 South Howell Avenue, Milwaukee, WI 53207 ',    959574,     0],
+            ['1 Wall Street, New York NY 10048',     0,     4010960]
+          ]);
+    
+          var options = {
+            //title: 'Portfolio Opportunity Map',
+            region: 'US',
+            displayMode: 'markers',
+            colorAxis: {colors: ['green', 'red']},
+            backgroundColor: { fill:'transparent' },
+            resolution: 'provinces'
+          };
+    
+          var chart = new google.visualization.GeoChart(document.getElementById('map_chart'));
+          chart.draw(data, options);
+
+        
         
       }
     </script>
@@ -197,11 +220,18 @@
                         
                     </div>
                     
-                    <div id="timeseries" class="chart well">
-                        <div id="meter_chart"></div>
+                    
+                    <div id="portfoliomap" class="chart well" >
+                        <h4>Opportunity Map</h4>
+                        <div id="map_chart" style="width: 900px; height: 300px;"></div>
                     </div>
                     <div id="barchart" class="chart well">
+                        <h4>Portfolio Energy Spend ($)</h4>
                         <div id="utility_chart"></div>
+                    </div>
+                    <div id="timeseries" class="chart well">
+                        <h4>Portfolio Load Profile (kW)</h4>
+                        <div id="meter_chart"></div>
                     </div>
                 </div>
                 <div class="tab-pane" id="investment">

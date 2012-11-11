@@ -11158,5 +11158,5 @@ for met in pxMeter
   time = "#{year}-#{month}-#{day} #{hour}:#{minute}"
   arr.push [time, parseFloat(met.Val)]
 
-root.Whizmo.Data.pxMeter = arr
-
+root.Whizmo.Data.pxMeter = arr[1800..-1]
+root.Whizmo.Data.pxMeter.unshift ["Time", "kW"]
