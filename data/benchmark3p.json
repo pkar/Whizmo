@@ -1,0 +1,2802 @@
+[
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 11.19478260869565
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 10.076335877862595
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 11.328082191780823
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 15.590344827586206
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 24.323699421965316
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 7.059130434782609
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 6.656488549618321
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 9.73150684931507
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 11.999310344827586
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 14.150289017341041
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 5.918260869565217
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 5.6183206106870225
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 12.24041095890411
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 7.882758620689655
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 12.300578034682081
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 8.699130434782607
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 6.595419847328245
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 8.81917808219178
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 10.773103448275862
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 13.965317919075144
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 8.41391304347826
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 7.694656488549619
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 10.035616438356163
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 12.086896551724138
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 13.22543352601156
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 8.841739130434782
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 9.34351145038168
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 10.263698630136986
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 15.677931034482759
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 17.387283236994218
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 8.770434782608696
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 8.366412213740459
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 9.95958904109589
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 15.590344827586206
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 18.497109826589593
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 8.556521739130433
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 12.091603053435115
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 15.88972602739726
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 15.677931034482759
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Education",
+    "consemption_kwh_per_sf": 20.439306358381504
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 40.000869565217386
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 38.54198473282443
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 40.230000000000004
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 56.10068965517242
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 70.38670520231213
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 25.223478260869566
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 25.461068702290078
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 34.56
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 43.178620689655176
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 40.947398843930635
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 21.14695652173913
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 21.490076335877863
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 43.470000000000006
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 28.36551724137931
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 35.594797687861266
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 31.083478260869562
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 25.227480916030537
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 31.32
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 38.76620689655173
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 40.4121387283237
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 30.06434782608696
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 29.432061068702293
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 35.64
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 43.493793103448276
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 38.27109826589595
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 31.59304347826087
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 35.738931297709925
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 36.45
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 56.415862068965524
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 50.31445086705202
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 31.338260869565218
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 32.001526717557255
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 35.370000000000005
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 56.10068965517242
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 53.52601156069363
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 30.57391304347826
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 46.25038167938932
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 56.43
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 56.415862068965524
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Food_Service",
+    "consemption_kwh_per_sf": 59.146242774566474
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 28.123478260869565
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 29.34732824427481
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 19.594520547945205
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 29.093793103448274
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 41.95838150289017
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 17.733913043478264
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 19.38702290076336
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 16.83287671232877
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 22.392413793103447
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 24.409248554913297
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 14.867826086956525
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 16.363358778625955
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 21.17260273972603
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 14.710344827586207
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 21.21849710982659
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 21.85391304347826
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 19.209160305343513
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 15.254794520547943
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 20.104137931034483
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 24.090173410404624
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 21.13739130434783
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 22.410687022900767
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 17.35890410958904
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 22.555862068965517
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 22.813872832369942
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 22.21217391304348
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 27.212977099236642
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 17.753424657534246
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 29.257241379310344
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 29.99306358381503
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 22.033043478260872
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 24.367175572519088
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 17.22739726027397
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 29.093793103448274
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 31.90751445086705
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 21.495652173913044
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 35.216793893129775
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 27.484931506849314
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 29.257241379310344
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Health_Care_",
+    "consemption_kwh_per_sf": 35.257803468208095
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 32.35565217391304
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 34.88931297709924
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 23.778767123287675
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 34.61793103448276
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 51.6878612716763
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 20.402608695652173
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 23.048091603053436
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 20.427397260273974
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 26.644137931034482
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 30.069364161849713
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 17.105217391304347
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 19.453435114503815
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 25.69383561643836
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 17.50344827586207
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 26.13872832369942
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 25.14260869565217
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 22.836641221374045
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 18.512328767123286
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 23.92137931034483
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 29.67630057803468
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 24.31826086956522
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 26.642748091603053
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 21.065753424657533
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 26.838620689655173
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 28.104046242774565
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 25.55478260869565
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 32.35190839694656
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 21.544520547945208
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 34.812413793103445
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 36.947976878612714
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 25.348695652173912
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 28.968702290076337
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 20.906164383561645
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 34.61793103448276
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 39.30635838150289
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 24.730434782608693
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 41.86717557251909
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 33.354109589041094
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 34.812413793103445
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "__Inpatient",
+    "consemption_kwh_per_sf": 43.433526011560694
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 22.799130434782604
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 21.916030534351144
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 13.98150684931507
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 16.449655172413795
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 30.495838150289014
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 14.376521739130435
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 14.477862595419847
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.01095890410959
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.660689655172414
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 17.74092485549133
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.05304347826087
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.219847328244272
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 15.107534246575344
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 8.317241379310346
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 15.421849710982658
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 17.71652173913043
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 14.345038167938931
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 10.884931506849314
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 11.366896551724139
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 17.50901734104046
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 17.135652173913044
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 16.73587786259542
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.386301369863013
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.753103448275862
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 16.581387283236992
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 18.00695652173913
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 20.32213740458015
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.667808219178083
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 16.54206896551724
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 21.7993063583815
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 17.86173913043478
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 18.196946564885497
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 12.292465753424658
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 16.449655172413795
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 23.1907514450867
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 17.426086956521736
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 26.299236641221373
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 19.611643835616437
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 16.54206896551724
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "__Outpatient",
+    "consemption_kwh_per_sf": 25.62578034682081
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 13.788695652173912
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 20.02671755725191
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 10.868835616438357
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 17.186206896551724
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 25.387861271676297
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 8.694782608695652
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 13.229770992366413
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 9.336986301369864
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 13.227586206896552
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 14.769364161849712
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 7.289565217391305
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 11.166412213740458
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 11.744178082191784
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 8.689655172413794
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 12.83872832369942
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 10.71478260869565
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 13.108396946564886
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 8.461643835616439
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 11.875862068965517
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 14.576300578034681
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 10.363478260869565
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 15.293129770992367
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 9.628767123287671
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 13.324137931034484
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 13.804046242774566
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 10.890434782608695
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 18.57022900763359
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 9.847602739726028
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 17.282758620689656
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 18.147976878612713
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 10.802608695652173
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 16.628244274809163
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 9.55582191780822
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 17.186206896551724
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 19.306358381502886
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 10.539130434782608
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 24.03206106870229
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 15.24554794520548
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 17.282758620689656
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Lodging",
+    "consemption_kwh_per_sf": 21.333526011560693
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 19.386086956521737
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.854961832061068
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 15.104109589041098
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.871724137931036
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 39.37398843930635
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 12.224347826086957
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 9.15267175572519
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 12.975342465753426
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 10.676551724137932
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 22.90578034682081
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 10.248695652173913
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 7.725190839694656
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 16.320547945205483
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 7.013793103448276
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 19.91156069364162
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 15.064347826086953
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 9.068702290076336
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 11.758904109589041
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 9.58551724137931
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 22.606358381502886
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 14.570434782608697
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 10.580152671755727
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.38082191780822
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 10.754482758620691
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 21.40867052023121
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 15.311304347826086
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 12.84732824427481
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.684931506849317
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.949655172413793
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 28.14566473988439
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 15.187826086956521
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 11.503816793893131
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.279452054794522
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.871724137931036
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 29.942196531791904
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 14.817391304347826
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 16.625954198473284
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 21.186301369863013
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 13.949655172413793
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Retail_",
+    "consemption_kwh_per_sf": 33.08612716763006
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 18.976521739130433
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 22.923664122137403
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 17.451369863013703
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 20.62344827586207
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 29.188439306358376
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 11.966086956521739
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.14351145038168
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.99178082191781
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.873103448275863
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 16.98034682080925
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 10.03217391304348
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 12.781679389312975
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 18.856849315068498
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 10.427586206896553
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.760693641618497
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.746086956521738
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.004580152671755
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 13.586301369863014
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.251034482758621
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 16.75838150289017
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.262608695652176
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 17.50534351145038
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.46027397260274
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.98896551724138
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.870520231213872
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.987826086956522
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 21.25648854961832
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.81164383561644
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 20.739310344827587
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 20.86473988439306
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.866956521739132
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 19.03358778625954
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 15.343150684931508
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 20.62344827586207
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 22.19653179190751
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 14.504347826086956
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 27.508396946564886
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 24.47876712328767
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 20.739310344827587
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Office",
+    "consemption_kwh_per_sf": 24.527167630057804
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 12.423478260869564
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 11.965648854961833
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 10.868835616438357
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 24.18344827586207
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 25.84393063583815
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 7.833913043478261
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 7.904580152671756
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.336986301369864
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 18.61310344827586
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 15.034682080924856
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 6.567826086956522
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 6.671755725190839
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 11.744178082191784
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 12.227586206896552
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 13.06936416184971
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.653913043478259
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 7.8320610687022905
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 8.461643835616439
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 16.71103448275862
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 14.83815028901734
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.337391304347827
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.137404580152673
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.628767123287671
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 18.74896551724138
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 14.052023121387283
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.812173913043479
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 11.095419847328245
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.847602739726028
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 24.319310344827585
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 18.473988439306357
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.73304347826087
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.935114503816795
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.55582191780822
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 24.18344827586207
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 19.653179190751445
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 9.495652173913044
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 14.3587786259542
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 15.24554794520548
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 24.319310344827585
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Public_Assembly",
+    "consemption_kwh_per_sf": 21.716763005780347
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.095652173913043
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.408396946564886
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 5.00068493150685
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 5.892413793103448
+  },
+  {
+    "min_size": 1001,
+    "max_size": 5000,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 15.354335260115604
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 2.582608695652174
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 2.9122137404580153
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.295890410958905
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.535172413793103
+  },
+  {
+    "min_size": 5001,
+    "max_size": 10000,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 8.932369942196532
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 2.165217391304348
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 2.4580152671755724
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 5.403424657534248
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 2.9793103448275864
+  },
+  {
+    "min_size": 10001,
+    "max_size": 25000,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 7.764739884393063
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.1826086956521733
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 2.885496183206107
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.893150684931507
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.071724137931034
+  },
+  {
+    "min_size": 25001,
+    "max_size": 50000,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 8.815606936416184
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.0782608695652174
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.366412213740458
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.4301369863013695
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.568275862068965
+  },
+  {
+    "min_size": 50001,
+    "max_size": 100000,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 8.348554913294796
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.234782608695652
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.087786259541985
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.53082191780822
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 5.9255172413793105
+  },
+  {
+    "min_size": 100001,
+    "max_size": 200000,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 10.9757225433526
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.208695652173913
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.6603053435114505
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 4.396575342465754
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 5.892413793103448
+  },
+  {
+    "min_size": 200001,
+    "max_size": 500000,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 11.676300578034681
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 1,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 3.1304347826086953
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 2,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 5.290076335877863
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 3,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 7.014383561643836
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 4,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 5.9255172413793105
+  },
+  {
+    "min_size": 500000,
+    "max_size": null,
+    "zone": 5,
+    "purpose": "Religious_Worship",
+    "consemption_kwh_per_sf": 12.902312138728323
+  }
+]
